@@ -1,0 +1,89 @@
+{% macro projectDetail(project) %}
+  <section class="project-block" id="{{ project.id }}">
+    <div class="project-block-row">
+      {% if project.image %}
+      <figure class="project-figure">
+        <img src="{% if project.image | isAbsoluteUrl %}{{ project.image }}{% else %}{{ project.image | url }}{% endif %}" width="320" height="180" loading="lazy" alt="">
+      </figure>
+      {% endif %}
+      <header class="project-block-header">
+        <h2>{{ project.title }}</h2>
+        {% if project.startYear %}
+        <p class="project-period">
+          <span class="project-period-label">Period</span>
+          {{ project.startYear }}–{% if project.endYear %}{{ project.endYear }}{% else %}present{% endif %}
+        </p>
+        {% endif %}
+        <p class="project-summary">{{ project.summary }}</p>
+        {% if project.links and project.links.length %}
+        <div class="card-links">
+          {% for link in project.links %}
+          <a href="{{ link.url }}">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if project.fundingSources or project.budget or project.role %}
+        <dl class="project-funding">
+          {% if project.role %}
+          <div><dt>Role</dt><dd>{{ project.role }}</dd></div>
+          {% endif %}
+          {% if project.fundingSources %}
+          <div><dt>Funding</dt><dd>{{ project.fundingSources }}</dd></div>
+          {% endif %}
+          {% if project.budget %}
+          <div><dt>Budget</dt><dd>{{ project.budget }}</dd></div>
+          {% endif %}
+        </dl>
+        {% endif %}
+      </header>
+    </div>
+
+    <h3>Publications</h3>
+    <ul>
+      {% if project.linkedPublications.length %}
+        {% for pub in project.linkedPublications %}
+          <li>
+            <strong>{{ pub.title }}</strong>
+            ({{ pub.issued | pubYear }})
+            {% if pub.DOI %} — <a href="{{ pub.DOI | doiUrl }}">DOI</a>{% elif pub.URL %} — <a href="{{ pub.URL }}">Link</a>{% endif %}
+          </li>
+        {% endfor %}
+      {% else %}
+        <li class="muted">No linked publications yet (add <code>projects = {&hellip;}</code> in <code>publications.bib</code>).</li>
+      {% endif %}
+    </ul>
+
+    <h3>Software</h3>
+    <ul>
+      {% if project.linkedSoftware.length %}
+        {% for sw in project.linkedSoftware %}
+          <li><a href="{{ sw.url }}">{{ sw.name }}</a> — {{ sw.description }}</li>
+        {% endfor %}
+      {% else %}
+        <li class="muted">None linked.</li>
+      {% endif %}
+    </ul>
+
+    <h3>Datasets</h3>
+    <ul>
+      {% if project.linkedDatasets.length %}
+        {% for ds in project.linkedDatasets %}
+          <li><a href="{{ ds.url }}">{{ ds.name }}</a> — {{ ds.description }}</li>
+        {% endfor %}
+      {% else %}
+        <li class="muted">None linked.</li>
+      {% endif %}
+    </ul>
+
+    <h3>Models</h3>
+    <ul>
+      {% if project.linkedModels.length %}
+        {% for m in project.linkedModels %}
+          <li><a href="{{ m.url }}">{{ m.name }}</a> — {{ m.description }}</li>
+        {% endfor %}
+      {% else %}
+        <li class="muted">None linked.</li>
+      {% endif %}
+    </ul>
+  </section>
+{% endmacro %}

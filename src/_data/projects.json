@@ -1,0 +1,39 @@
+[
+  {
+    "id": "doc-ie-historical",
+    "title": "Interactive information extraction for historical and archival documents",
+    "summary": "Sample project card: user-in-the-loop workflows, layout and text extraction, and collaboration with digital humanities partners.",
+    "startYear": "2018",
+    "endYear": null,
+    "image": "/assets/images/placeholder-project.svg",
+    "role": "PI (sample)",
+    "fundingSources": "Placeholder Agency / internal EPITA–LRE support (replace with real grants).",
+    "budget": "Sample: 45 kEUR",
+    "links": [
+      { "label": "Lab page (placeholder)", "url": "https://www.lre.epita.fr/" }
+    ]
+  },
+  {
+    "id": "eval-benchmarks",
+    "title": "Evaluation protocols, competitions, and reproducibility",
+    "summary": "Sample project card: benchmark design, metrics, shared tasks, and open evaluation material.",
+    "startYear": "2015",
+    "endYear": null,
+    "image": null,
+    "links": [
+      { "label": "GitHub organization", "url": "https://github.com/jchazalon/" }
+    ]
+  },
+  {
+    "id": "medical-doc-pipeline",
+    "title": "Document understanding for clinical forms (sample)",
+    "summary": "Placeholder project illustrating a third line of work: structured extraction from administrative and medical document images.",
+    "startYear": "2022",
+    "endYear": "2024",
+    "image": null,
+    "role": "Partner work-package leader (sample)",
+    "fundingSources": "Sample EU consortium (placeholder)",
+    "budget": "Sample: institutional contribution only",
+    "links": []
+  }
+]

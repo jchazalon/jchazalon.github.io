@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Contact & opportunities
+description: Get in touch, explore collaborations, PhD or internships, and book a meeting.
+---
+
+<h1>Contact &amp; opportunities</h1>
+
+<p class="lede">One page for practical contact, student opportunities, and scheduling. Adjust the text below to match your lab policy.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Professional email: <strong>joseph(dot)chazalon(at)epita(dot)fr</strong><br>
+Personal email: <strong>joseph(dot)chazalon(at)gmail(dot)com</strong></p>
+<p class="muted small">Languages I read: English, French, Spanish</p>
+<p class="contact-profiles-note muted small">Profiles and publication indexes (GitHub, ORCID, Scholar, etc.) are linked from the <a href="{{ '/' | url }}">home page</a>.</p>
+
+<h2 id="opportunities">PhD, internships &amp; collaborations</h2>
+<p>I am open to <strong>research collaborations</strong> in document image analysis, information extraction, evaluation, and related areas. If you are a <strong>prospective PhD student</strong> or seeking an <strong>internship</strong> (MSc / engineering school) aligned with the lab’s topics, please email a short CV, transcript summary, and a paragraph on what you would like to work on. Replace this paragraph with your real policy (funding, intake periods, and so on).</p>
+
+<h2 id="schedule">Book an appointment</h2>
+<p>{% if site.scheduleUrl %}<a class="btn btn-primary" href="{{ site.scheduleUrl }}">Open booking calendar</a>{% else %}Add <code>scheduleUrl</code> to <code>src/_data/site.json</code> to show a booking link here.{% endif %}</p>

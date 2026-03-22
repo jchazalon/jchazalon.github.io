@@ -1,0 +1,43 @@
+---
+layout: base.njk
+title: Projects
+description: Research projects with linked publications, software, datasets, and models.
+---
+{% from "partials/project-detail-block.njk" import projectDetail %}
+
+<h1>Projects</h1>
+<p class="lede-small">Software, datasets, and models use <code>projectIds</code> in JSON; publications use <code>projects</code> in <code>publications.bib</code>. Optional: <code>image</code>, <code>startYear</code>, <code>endYear</code> (<code>null</code> or omitted = ongoing).</p>
+
+{% if projectsOngoing.length and projectsPast.length %}
+<nav class="page-jump-nav" aria-label="Project sections">
+  <span class="page-jump-label">Jump to</span>
+  <a href="#ongoing">Ongoing projects</a>
+  <a href="#past">Past projects</a>
+</nav>
+{% endif %}
+
+{% if projectsOngoing.length %}
+<section id="ongoing" class="project-era">
+  <h2 class="project-era-heading">Ongoing projects</h2>
+  <div class="project-page-sections">
+    {% for project in projectsOngoing %}
+      {{ projectDetail(project) }}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if projectsPast.length %}
+<section id="past" class="project-era">
+  <h2 class="project-era-heading">Past projects</h2>
+  <div class="project-page-sections">
+    {% for project in projectsPast %}
+      {{ projectDetail(project) }}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if not projectsOngoing.length and not projectsPast.length %}
+<p class="muted">No projects defined.</p>
+{% endif %}

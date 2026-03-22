@@ -1,0 +1,68 @@
+%% publications.bib — single source of truth for bibliography (reuse on lab pages, CV, etc.)
+%%
+%% projects = {id} or {id1 and id2}  → links to site projects (ids in src/_data/projects.json)
+%%
+%% Optional multi-URL fields (comma or "and" between URLs):
+%%   pdf     — paper PDFs (HAL, arXiv, publisher OA, etc.)
+%%   slides  — talk slides (PDF or any URL)
+%%   poster  — poster PDFs
+%%   code    — source repositories
+%%   model   — model weights / HF / Zenodo, etc.
+%%   thumb or image — one teaser image (path like /assets/images/... or https URL)
+%%   core    — CORE ranking for conferences (e.g. A*, A, B)
+%%   scimago — Scimago / SJR style label for journals (e.g. Q1, Q2)
+
+@inproceedings{Smith2024Layouts,
+  title        = {Layout Analysis for Historical Collections: A Sample Study},
+  author       = {Smith, Alice and Chazalon, Joseph},
+  booktitle    = {Proceedings of the Placeholder Joint Conference on Digital Libraries (JCDL)},
+  year         = {2024},
+  pages        = {101--110},
+  doi          = {10.1000/placeholder.jcdl.2024},
+  url          = {https://example.org/papers/sample-jcdl-2024},
+  projects     = {doc-ie-historical},
+  thumb        = {/assets/images/placeholder-pub.svg},
+  core         = {A},
+  pdf          = {https://hal.archives-ouvertes.fr/hal-00000000v1/file/sample-layout.pdf and https://arxiv.org/pdf/2401.00000.pdf},
+  slides       = {https://example.org/talks/sample-layout-slides.pdf},
+  poster       = {https://example.org/posters/sample-layout-poster.pdf},
+  code         = {https://github.com/jchazalon/placeholder-layout-code},
+  model        = {https://huggingface.co/jchazalon/placeholder-layout-model}
+}
+
+@article{Dupont2023Survey,
+  title        = {Information Extraction from Administrative Documents: A Survey (sample)},
+  author       = {Dupont, Marie and Chazalon, Joseph and Other, Pat},
+  journal      = {Sample Journal of Document Analysis},
+  volume       = {12},
+  number       = {3},
+  pages        = {45--67},
+  year         = {2023},
+  doi          = {10.1000/placeholder.sjda.2023},
+  url          = {https://example.org/papers/sample-survey-2023},
+  projects     = {doc-ie-historical and eval-benchmarks},
+  scimago      = {Q1},
+  pdf          = {https://zenodo.org/record/0000000/files/survey.pdf}
+}
+
+@inproceedings{EvalBench2022,
+  title        = {Towards Reproducible Benchmarks for Document Recognition (sample)},
+  author       = {Chazalon, Joseph and Lee, Kim},
+  booktitle    = {Proc. Placeholder ICDAR Workshop},
+  year         = {2022},
+  url          = {https://example.org/papers/sample-icdarws-2022},
+  projects     = {eval-benchmarks},
+  code         = {https://github.com/jchazalon/placeholder-benchmark-kit},
+  model        = {https://zenodo.org/record/0000001}
+}
+
+@phdthesis{chazalon2013phd,
+  author       = {Chazalon, Joseph},
+  title        = {Sample PhD thesis title — document image analysis topics},
+  school       = {INSA Rennes},
+  year         = {2013},
+  type         = {PhD thesis},
+  url          = {https://example.org/theses/sample-phd-2013},
+  projects     = {doc-ie-historical},
+  pdf          = {https://example.org/theses/sample-phd-2013.pdf}
+}

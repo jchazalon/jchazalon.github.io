@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Publications
+description: Publications from publications.bib, with links to related projects.
+---
+{% from "partials/project-pills.njk" import pills %}
+{% from "partials/pub-icons.njk" import iconPublisher, iconDoi, iconPdf, iconSlides, iconPoster, iconCode, iconModel %}
+
+<h1>Publications</h1>
+<p class="lede-small">Bibliography: <a href="{{ '/publications.bib' | url }}"><code>publications.bib</code></a>. Projects: <code>projects = {id}</code>. Links: <code>pdf</code>, <code>slides</code>, <code>poster</code>, <code>code</code>, <code>model</code>. Thumbnail: <code>thumb</code>. Rankings: <code>core</code>, <code>scimago</code> (e.g. <code>A*</code>, <code>Q1</code>).</p>
+
+<ol class="pub-list">
+  {% for pub in publications %}
+  {% set primary = pub | pubPrimaryLink %}
+  <li class="pub-item">
+    <div class="pub-item-row">
+      {% if pub.thumb %}
+      {% if primary %}
+      <a class="pub-thumb" href="{{ primary }}">
+        <img src="{% if pub.thumb | isAbsoluteUrl %}{{ pub.thumb }}{% else %}{{ pub.thumb | url }}{% endif %}" width="120" height="160" loading="lazy" alt="">
+      </a>
+      {% else %}
+      <div class="pub-thumb">
+        <img src="{% if pub.thumb | isAbsoluteUrl %}{{ pub.thumb }}{% else %}{{ pub.thumb | url }}{% endif %}" width="120" height="160" loading="lazy" alt="">
+      </div>
+      {% endif %}
+      {% endif %}
+      <div class="pub-item-body">
+        <p class="pub-authors">{{ pub.author | formatAuthors }}</p>
+        <p class="pub-title">{{ pub.title }}</p>
+        <p class="pub-venue">
+          {% set y = pub.issued | pubYear %}
+          {% if y %}{{ y }}. {% endif %}
+          {{ pub | pubVenue }}
+          {% if pub.volume %}<span class="vol">, vol. {{ pub.volume }}</span>{% endif %}
+          {% if pub.issue %}<span class="iss">, no. {{ pub.issue }}</span>{% endif %}
+          {% if pub.page %}<span class="pp">, pp. {{ pub.page }}</span>{% endif %}
+        </p>
+        {% if pub.core or pub.scimago %}
+        <p class="pub-ranks" aria-label="Venue rankings">
+          {% if pub.core %}<span class="venue-badge core" title="CORE">CORE {{ pub.core }}</span>{% endif %}
+          {% if pub.scimago %}<span class="venue-badge scimago" title="Scimago Journal Rank">SJR {{ pub.scimago }}</span>{% endif %}
+        </p>
+        {% endif %}
+        <div class="pub-links" aria-label="Publication links">
+          {% if pub.URL %}
+          <a class="pub-link" href="{{ pub.URL }}"><span class="pub-link-ico" aria-hidden="true">{{ iconPublisher() }}</span><span>Publisher</span></a>
+          {% endif %}
+          {% if pub.DOI %}
+          <a class="pub-link" href="{{ pub.DOI | doiUrl }}"><span class="pub-link-ico" aria-hidden="true">{{ iconDoi() }}</span><span>DOI</span></a>
+          {% endif %}
+          {% for url in pub.bibLinks.pdf %}
+          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconPdf() }}</span><span>{{ url | bibLinkLabel('pdf', loop.index, pub.bibLinks.pdf.length) }}</span></a>
+          {% endfor %}
+          {% for url in pub.bibLinks.slides %}
+          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconSlides() }}</span><span>{{ url | bibLinkLabel('slides', loop.index, pub.bibLinks.slides.length) }}</span></a>
+          {% endfor %}
+          {% for url in pub.bibLinks.poster %}
+          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconPoster() }}</span><span>{{ url | bibLinkLabel('poster', loop.index, pub.bibLinks.poster.length) }}</span></a>
+          {% endfor %}
+          {% for url in pub.bibLinks.code %}
+          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconCode() }}</span><span>{{ url | bibLinkLabel('code', loop.index, pub.bibLinks.code.length) }}</span></a>
+          {% endfor %}
+          {% for url in pub.bibLinks.model %}
+          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconModel() }}</span><span>{{ url | bibLinkLabel('model', loop.index, pub.bibLinks.model.length) }}</span></a>
+          {% endfor %}
+        </div>
+        {{ pills(pub.projectIds, projects) }}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ol>

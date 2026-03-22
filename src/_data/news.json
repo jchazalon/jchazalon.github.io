@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2025-03-01",
+    "title": "Website refresh",
+    "summary": "Site rebuilt with Eleventy; BibTeX publications and cross-links to projects and artifacts.",
+    "body": "This site is now built with Eleventy; publications are read from publications.bib and cross-linked with projects, software, datasets, and models.",
+    "href": null
+  },
+  {
+    "date": "2024-11-12",
+    "title": "Sample news: invited talk",
+    "summary": "Invited talk on document AI at Sample University (placeholder).",
+    "body": "Placeholder announcement: gave a talk on document AI at Sample University (replace with real items).",
+    "href": "https://example.org"
+  },
+  {
+    "date": "2024-06-01",
+    "title": "Sample news: program committee",
+    "summary": "Program committee, SAMPLE 2025 (placeholder).",
+    "body": "Placeholder: serving on the program committee of SAMPLE 2025.",
+    "href": null
+  }
+]

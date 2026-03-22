@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Blog
+description: Longer notes on research topics—code, math, and occasional interactive snippets.
+---
+<h1>Blog</h1>
+<p class="lede">Research notes and essays that suit a web format better than a full publication entry. <a href="{{ '/feed.xml' | url }}">RSS feed</a></p>
+
+<ul class="blog-list">
+  {% for post in collections.posts | sortPosts %}
+  <li class="blog-list-item">
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.date %}<time class="blog-list-date" datetime="{{ post.data.date | isoDate }}">{{ post.data.date | readableDate }}</time>{% endif %}
+    {% if post.data.description %}<p class="blog-list-desc">{{ post.data.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

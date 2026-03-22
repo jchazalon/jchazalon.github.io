@@ -1,0 +1,24 @@
+---
+layout: base.njk
+bodyClass: is-post
+---
+<article class="post prose">
+  <header class="post-header">
+    <h1>{{ title }}</h1>
+    {% if page.date %}
+    <p class="post-meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      {% if tags %}
+      {% for t in tags %}
+      {% if t != "posts" %}
+      <span class="post-tag">{{ t }}</span>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    </p>
+    {% endif %}
+  </header>
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+</article>

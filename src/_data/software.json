@@ -1,0 +1,18 @@
+[
+  {
+    "id": "layout-eval-kit",
+    "name": "Layout evaluation kit (sample)",
+    "description": "Placeholder toolkit for scoring page segmentation against reference layouts.",
+    "url": "https://github.com/jchazalon/",
+    "image": null,
+    "projectIds": ["eval-benchmarks"]
+  },
+  {
+    "id": "ie-annotation-ui",
+    "name": "IE annotation UI (sample)",
+    "description": "Placeholder lightweight interface for assisted labeling of regions and fields on document images.",
+    "url": "https://github.com/jchazalon/",
+    "image": "/assets/images/placeholder-project.svg",
+    "projectIds": ["doc-ie-historical"]
+  }
+]

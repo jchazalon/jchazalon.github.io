@@ -1,0 +1,12 @@
+{% macro pills(projectIds, projects, label="Related projects") %}
+  {% if projectIds and projectIds.length %}
+    <div class="related-projects">
+      <span class="related-projects-label">{{ label }}</span>
+      <span class="pills" role="list">
+        {% for pid in projectIds %}
+          <a class="pill" role="listitem" href="{{ pid | projectUrl }}" title="{{ projectLabel(projects, pid) }}">{{ projectLabel(projects, pid) }}</a>
+        {% endfor %}
+      </span>
+    </div>
+  {% endif %}
+{% endmacro %}

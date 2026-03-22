@@ -1,0 +1,18 @@
+[
+  {
+    "id": "layout-transformer-sample",
+    "name": "Layout Transformer (sample checkpoint)",
+    "description": "Placeholder model card: a transformer-based layout detector trained on public page layout data (replace with real artifact and license).",
+    "url": "https://example.org/models/layout-transformer-sample",
+    "image": null,
+    "projectIds": ["doc-ie-historical"]
+  },
+  {
+    "id": "field-tagger-baseline",
+    "name": "Baseline field tagger (sample)",
+    "description": "Placeholder sequence tagger for key-value fields on form-like pages.",
+    "url": "https://example.org/models/field-tagger-baseline",
+    "image": null,
+    "projectIds": ["medical-doc-pipeline", "doc-ie-historical"]
+  }
+]

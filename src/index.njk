@@ -1,0 +1,68 @@
+---
+layout: base.njk
+title: Home
+description: Joseph Chazalon — research in document image analysis, information extraction, and reproducible evaluation.
+bodyClass: is-home
+---
+<div class="home-layout">
+  <div class="home-main">
+    <h1>About</h1>
+
+    <p class="lede">Assistant Professor in Computer Science (PhD), <a href="http://www.epita.fr/">EPITA</a>, <a href="https://www.lre.epita.fr/">LRE</a>, France. Research on document image analysis, interactive information extraction, and open evaluation.</p>
+
+    <p class="home-actions">
+      {% if site.cvUrl %}<a class="btn btn-primary" href="{{ site.cvUrl }}">CV / résumé (PDF)</a>{% endif %}
+      {% if site.scheduleUrl %}<a class="btn" href="{{ site.scheduleUrl }}">Book an appointment</a>{% endif %}
+      <a class="btn" href="{{ '/contact/' | url }}">Contact &amp; opportunities</a>
+    </p>
+
+    <h2>Research topics</h2>
+    <ul class="compact-list">
+      <li><strong>Theory:</strong> computer vision, NLP, information retrieval, machine learning</li>
+      <li><strong>Applications:</strong> document image analysis (historical, administrative, identity, medical…), interactive/assisted information extraction</li>
+      <li><strong>Method:</strong> digital humanities, datasets, competitions and evaluation protocols, open/reproducible research</li>
+    </ul>
+
+    <h2>Profiles</h2>
+    <p class="profiles-inline">
+      <a href="https://github.com/jchazalon/">GitHub</a> ·
+      <a href="https://orcid.org/0000-0002-3757-074X">ORCID</a> ·
+      <a href="https://scholar.google.fr/citations?user=zu8wSDAAAAAJ">Google Scholar</a> ·
+      <a href="https://dblp.org/pers/hd/c/Chazalon:Joseph">DBLP</a> ·
+      <a href="https://hal.archives-ouvertes.fr/search/index/?qa[authIdHal_s][]=joseph-chazalon">HAL</a> ·
+      <a href="https://www.idref.fr/171616030">IdRef</a>
+    </p>
+
+    <h2>Biography (short)</h2>
+    <p>I received an engineering degree (2008) and a Ph.D. (2013), both in Computer Science, from INSA Rennes. I then worked as a research engineer at the University of La Rochelle (2013–2018). Since 2018 I have been a lecturer at EPITA, with both teaching and research activities. My research interests include document image analysis (especially historical documents), interactive information extraction, evaluation of algorithms and systems, and open/reproducible research. I am involved in organizing scientific events (e.g. ICDAR competitions and workshops). I enjoy collaborating across fields and countries and am open to new collaborations.{% if site.cvUrl %} A fuller timeline appears in my <a href="{{ site.cvUrl }}">CV / résumé</a>.{% endif %}</p>
+  </div>
+
+  {% set recentBlog = collections.posts | recentBlogPosts(4) %}
+  <aside class="home-aside" aria-label="News and recent blog posts">
+    <h2 class="home-aside-title">News</h2>
+    <ul class="news-compact">
+      {% for item in news | sortNews %}
+      {% if loop.index <= 8 %}
+      <li>
+        <time datetime="{{ item.date }}">{{ item.date }}</time>
+        <a href="{{ '/news/' | url }}#news-{{ item.date }}">{{ item.summary | default(item.title) }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <p class="home-aside-more"><a href="{{ '/news/' | url }}">All news →</a></p>
+
+    {% if recentBlog.length %}
+    <h2 class="home-aside-title home-aside-title--sub">Blog</h2>
+    <ul class="news-compact">
+      {% for post in recentBlog %}
+      <li>
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="home-aside-more"><a href="{{ '/blog/' | url }}">All posts →</a></p>
+    {% endif %}
+  </aside>
+</div>

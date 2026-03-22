@@ -1,0 +1,18 @@
+[
+  {
+    "id": "histocr-sample-corpus",
+    "name": "Historical OCR sample corpus (placeholder)",
+    "description": "Placeholder dataset: synthetic or anonymized page images with transcriptions for method comparison.",
+    "url": "https://example.org/datasets/histocr-sample",
+    "image": null,
+    "projectIds": ["doc-ie-historical", "eval-benchmarks"]
+  },
+  {
+    "id": "admin-forms-mini",
+    "name": "Administrative forms mini-collection (placeholder)",
+    "description": "Placeholder small set of form images for layout and field extraction experiments.",
+    "url": "https://example.org/datasets/admin-forms-mini",
+    "image": null,
+    "projectIds": ["medical-doc-pipeline"]
+  }
+]

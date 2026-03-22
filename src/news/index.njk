@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: News
+description: Updates, talks, service, and milestones.
+---
+<h1>News</h1>
+<p>Short updates in reverse chronological order. Replace sample entries in <code>src/_data/news.json</code>.</p>
+
+<ul class="news-list">
+  {% for item in news | sortNews %}
+  <li class="news-item" id="news-{{ item.date }}">
+    <time datetime="{{ item.date }}">{{ item.date }}</time>
+    <h3 class="news-title">{{ item.title }}</h3>
+    {% if item.summary %}<p class="news-summary">{{ item.summary }}</p>{% endif %}
+    {% if item.body %}<p>{{ item.body }}</p>{% endif %}
+    {% if item.href %}<p><a href="{{ item.href }}">More →</a></p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
