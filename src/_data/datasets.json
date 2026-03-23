@@ -1,18 +1,74 @@
 [
   {
-    "id": "histocr-sample-corpus",
-    "name": "Historical OCR sample corpus (placeholder)",
-    "description": "Placeholder dataset: synthetic or anonymized page images with transcriptions for method comparison.",
-    "url": "https://example.org/datasets/histocr-sample",
+    "id": "maptext-zenodo-community",
+    "name": "ICDAR MapText datasets and artifacts (Zenodo community)",
+    "description": "Shared datasets, evaluation scripts, and challenge artifacts for historical map text detection, recognition, and linking (MapText 2024-2025).",
+    "url": "https://zenodo.org/communities/icdar-maptext/",
     "image": null,
-    "projectIds": ["doc-ie-historical", "eval-benchmarks"]
+    "projectIds": ["maptext-competitions", "soduco"]
   },
   {
-    "id": "admin-forms-mini",
-    "name": "Administrative forms mini-collection (placeholder)",
-    "description": "Placeholder small set of form images for layout and field extraction experiments.",
-    "url": "https://example.org/datasets/admin-forms-mini",
+    "id": "soduco-annuaires-1798-1914",
+    "name": "Paris historical directories, 1798-1914 (structured and geolocated)",
+    "description": "Large-scale extraction and geolocation dataset from digitized Paris trade directories, released with the SoDUCo team.",
+    "url": "https://doi.org/10.34847/nkl.98eem49t",
     "image": null,
-    "projectIds": ["medical-doc-pipeline"]
+    "projectIds": ["soduco"]
+  },
+  {
+    "id": "ftd-nested-ner-2023",
+    "name": "French Trade Directories dataset for nested NER",
+    "description": "Dataset of 19th-century French trade directories designed for nested named entity recognition benchmarks.",
+    "url": "https://doi.org/10.5281/zenodo.8167628",
+    "image": null,
+    "projectIds": ["soduco", "ner-historical-docs"]
+  },
+  {
+    "id": "ftd-dataset",
+    "name": "French Trade Directories (FTD)",
+    "description": "Open dataset of 19th-century French trade directories used for information extraction and historical text processing experiments.",
+    "url": "https://doi.org/10.5281/zenodo.6394464",
+    "image": null,
+    "projectIds": ["soduco", "ner-historical-docs"]
+  },
+  {
+    "id": "icdar2021-mapseg-dataset",
+    "name": "ICDAR 2021 Competition on Historical Map Segmentation dataset",
+    "description": "Competition dataset for historical map segmentation tasks (building blocks, map content segmentation, and georeferencing intersections).",
+    "url": "https://zenodo.org/record/4817662",
+    "image": null,
+    "projectIds": ["soduco", "maptext-competitions"]
+  },
+  {
+    "id": "smartdoc-qa",
+    "name": "SmartDoc-QA",
+    "description": "Dataset for quality assessment of smartphone-captured document images, including single and multiple distortions.",
+    "url": "https://zenodo.org/record/5293201",
+    "image": null,
+    "projectIds": ["mobile-doc-capture"]
+  },
+  {
+    "id": "smartdoc15-ch1",
+    "name": "ICDAR 2015 SmartDoc challenge 1 dataset",
+    "description": "Dataset and benchmark material for smartphone document capture and OCR challenge task 1.",
+    "url": "https://zenodo.org/record/1230218",
+    "image": null,
+    "projectIds": ["mobile-doc-capture"]
+  },
+  {
+    "id": "smartdoc15-ch2",
+    "name": "ICDAR 2015 SmartDoc challenge 2 dataset",
+    "description": "Dataset and benchmark material for smartphone document capture and OCR challenge task 2.",
+    "url": "https://zenodo.org/record/2572929",
+    "image": null,
+    "projectIds": ["mobile-doc-capture"]
+  },
+  {
+    "id": "text-superres-2013",
+    "name": "Text single-image super-resolution dataset (2013)",
+    "description": "University of La Rochelle dataset for single text image super-resolution experiments.",
+    "url": "http://goo.gl/jM8ySG",
+    "image": null,
+    "projectIds": ["mobile-doc-capture"]
   }
 ]

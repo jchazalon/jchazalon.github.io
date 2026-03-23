@@ -1,39 +1,92 @@
 [
   {
-    "id": "doc-ie-historical",
-    "title": "Interactive information extraction for historical and archival documents",
-    "summary": "Sample project card: user-in-the-loop workflows, layout and text extraction, and collaboration with digital humanities partners.",
-    "startYear": "2018",
-    "endYear": null,
-    "image": "/assets/images/placeholder-project.svg",
-    "role": "PI (sample)",
-    "fundingSources": "Placeholder Agency / internal EPITA–LRE support (replace with real grants).",
-    "budget": "Sample: 45 kEUR",
-    "links": [
-      { "label": "Lab page (placeholder)", "url": "https://www.lre.epita.fr/" }
-    ]
-  },
-  {
-    "id": "eval-benchmarks",
-    "title": "Evaluation protocols, competitions, and reproducibility",
-    "summary": "Sample project card: benchmark design, metrics, shared tasks, and open evaluation material.",
-    "startYear": "2015",
+    "id": "mezanno",
+    "title": "BnF MEZANNO Quadrennial Project",
+    "summary": "Open platform for social sciences and humanities researchers to define corpora, annotate them semi-automatically through remote APIs, and export interoperable structured data from IIIF sources.",
+    "startYear": "2024",
     "endYear": null,
     "image": null,
+    "role": "Coordinator for EPITA (team coordination, event organization, development management)",
+    "fundingSources": "BnF MEZANNO quadrennial project with IGN, EHESS, and BnF",
     "links": [
-      { "label": "GitHub organization", "url": "https://github.com/jchazalon/" }
+      { "label": "Project website", "url": "https://mezanno.xyz" }
     ]
   },
   {
-    "id": "medical-doc-pipeline",
-    "title": "Document understanding for clinical forms (sample)",
-    "summary": "Placeholder project illustrating a third line of work: structured extraction from administrative and medical document images.",
-    "startYear": "2022",
+    "id": "soduco",
+    "title": "ANR SODUCO Project",
+    "summary": "Chronological mapping of socio-economic activities in Paris (1789-1950), combining extraction from historical directories and maps with geohistorical data linking at large scale.",
+    "startYear": "2019",
     "endYear": "2024",
     "image": null,
-    "role": "Partner work-package leader (sample)",
-    "fundingSources": "Sample EU consortium (placeholder)",
-    "budget": "Sample: institutional contribution only",
+    "role": "Coordinator for EPITA; co-supervision and document analysis contributions",
+    "fundingSources": "ANR project with IGN, EHESS, National Archives, and BnF",
+    "links": [
+      { "label": "Project website", "url": "https://soduco.github.io/" }
+    ]
+  },
+  {
+    "id": "ner-historical-docs",
+    "title": "NER for Historical Documents Group",
+    "summary": "Collaborative research group dedicated to text analysis from noisy OCR in historical documents, with a focus on named entity recognition and robust evaluation setups.",
+    "startYear": "2022",
+    "endYear": null,
+    "image": null,
+    "role": "Co-creator",
+    "links": [
+      { "label": "GitHub organization", "url": "https://github.com/ner-for-historical-docs" }
+    ]
+  },
+  {
+    "id": "maptext-competitions",
+    "title": "ICDAR MapText Competitions",
+    "summary": "International shared tasks for historical map text detection, recognition, and linking, including benchmark design, dataset curation, and community-driven evaluation material.",
+    "startYear": "2024",
+    "endYear": null,
+    "image": null,
+    "role": "International competition coordination and scientific steering",
+    "links": [
+      { "label": "ICDAR 2024 challenge", "url": "https://rrc.cvc.uab.es/?ch=28" },
+      { "label": "ICDAR 2025 challenge", "url": "https://rrc.cvc.uab.es/?ch=32" }
+    ]
+  },
+  {
+    "id": "mobile-doc-capture",
+    "title": "Mobile Document Capture and OCR Challenges",
+    "summary": "Research and transfer activities on smartphone document acquisition, quality assessment, and robust OCR workflows, including public competitions and open evaluation frameworks.",
+    "startYear": "2013",
+    "endYear": "2018",
+    "image": null,
+    "links": [
+      { "label": "SmartDoc challenge", "url": "http://smartdoc.univ-lr.fr/" },
+      { "label": "SmartDoc 2017 framework", "url": "https://github.com/smartdoc2017-competition" }
+    ]
+  },
+  {
+    "id": "numis-coins",
+    "title": "NUMIS - Indexing Images of Ancient Coins",
+    "summary": "Research and transfer work on segmentation and indexing of numismatic document imagery in the FEDER NUMIS context, including evaluation-oriented workflows for grayscale coin documents.",
+    "startYear": "2014",
+    "endYear": "2015",
+    "image": null,
+    "links": []
+  },
+  {
+    "id": "irisa-yvelines-archives",
+    "title": "Contextual and Assisted Interpretation of Historical Archives",
+    "summary": "PhD-era project on semi-automatic analysis of difficult 18th-century archival collections, conducted with the Departmental Archives of Yvelines and focused on interactive, collection-aware document understanding.",
+    "startYear": "2008",
+    "endYear": "2013",
+    "image": null,
+    "links": []
+  },
+  {
+    "id": "brainles-miccai",
+    "title": "BrainLes / MICCAI MRI Tumor Challenges",
+    "summary": "Participation in MRI brain lesion segmentation and survival prediction challenges, with lightweight and reproducible deep-learning pipelines.",
+    "startYear": "2018",
+    "endYear": "2019",
+    "image": null,
     "links": []
   }
 ]

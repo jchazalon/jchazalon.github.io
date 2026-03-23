@@ -1,23 +1,51 @@
 [
   {
-    "date": "2025-03-01",
-    "title": "Website refresh",
-    "summary": "Site rebuilt with Eleventy; BibTeX publications and cross-links to projects and artifacts.",
-    "body": "This site is now built with Eleventy; publications are read from publications.bib and cross-linked with projects, software, datasets, and models.",
+    "date": "2025-05-12",
+    "title": "Invited talk at CineMatheque francaise / Universite Paris 8",
+    "summary": "Presented \"Des images d'annuaires aux tables de personnes\" at the study day \"Archives et femmes de cinema\".",
+    "body": "Invited talk in Paris on extracting person-level information from historical directories and connecting document analysis outputs to humanities research workflows.",
     "href": null
   },
   {
-    "date": "2024-11-12",
-    "title": "Sample news: invited talk",
-    "summary": "Invited talk on document AI at Sample University (placeholder).",
-    "body": "Placeholder announcement: gave a talk on document AI at Sample University (replace with real items).",
-    "href": "https://example.org"
+    "date": "2025-02-08",
+    "title": "International radio panel (RFI)",
+    "summary": "Participated as panel member in Radio France Internationale's international broadcast \"La Marche du Monde\".",
+    "body": "Public outreach activity discussing broader societal and technological dimensions related to data and AI in historical and documentary contexts.",
+    "href": null
   },
   {
-    "date": "2024-06-01",
-    "title": "Sample news: program committee",
-    "summary": "Program committee, SAMPLE 2025 (placeholder).",
-    "body": "Placeholder: serving on the program committee of SAMPLE 2025.",
+    "date": "2025-01-15",
+    "title": "MEZANNO workshop and Corpusense release",
+    "summary": "Organized a workshop in Jan. 2025 and released Corpusense in the BnF MEZANNO project.",
+    "body": "The MEZANNO team delivered a first open-source workflow tool to chain document analysis services on IIIF resources and accelerate production of interoperable structured data.",
+    "href": "https://mezanno.xyz"
+  },
+  {
+    "date": "2024-09-01",
+    "title": "ICDAR 2024 map text competition",
+    "summary": "Co-organized the ICDAR competition on historical map text detection, recognition, and linking.",
+    "body": "The challenge contributed benchmark tasks and evaluation material for document AI on historical cartographic collections.",
+    "href": "https://rrc.cvc.uab.es/?ch=28"
+  },
+  {
+    "date": "2024-02-14",
+    "title": "PLoS ONE publication on map vectorization",
+    "summary": "Published \"Automatic vectorization of historical maps: A benchmark\".",
+    "body": "Journal article reporting benchmark results and methodology for automatic vectorization of historical maps.",
+    "href": "https://doi.org/10.1371/journal.pone.0298217"
+  },
+  {
+    "date": "2023-07-01",
+    "title": "ICDAR 2023 contributions on historical documents",
+    "summary": "Published works on nested NER and linear object detection in document images at ICDAR 2023.",
+    "body": "Conference contributions addressed noisy OCR-oriented information extraction and object-level detection in structured historical material.",
+    "href": null
+  },
+  {
+    "date": "2023-02-20",
+    "title": "Invited seminar in Lyon (IXXI)",
+    "summary": "Gave invited talk on SoDUCo and cross-source geohistorical data linking.",
+    "body": "Presentation focused on extracting, aligning, and analyzing historical urban data from directories and maps to study Paris evolution (1789-1950).",
     "href": null
   }
 ]

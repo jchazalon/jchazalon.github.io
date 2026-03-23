@@ -1,14 +1,14 @@
 ---
 layout: base.njk
 title: Home
-description: Joseph Chazalon — research in document image analysis, information extraction, and reproducible evaluation.
+description: Joseph Chazalon — computer vision, NLP, and machine learning for document understanding, historical sources, and reproducible evaluation.
 bodyClass: is-home
 ---
 <div class="home-layout">
   <div class="home-main">
     <h1>About</h1>
 
-    <p class="lede">Assistant Professor in Computer Science (PhD), <a href="http://www.epita.fr/">EPITA</a>, <a href="https://www.lre.epita.fr/">LRE</a>, France. Research on document image analysis, interactive information extraction, and open evaluation.</p>
+    <p class="lede">Assistant Professor in Computer Science (PhD), <a href="http://www.epita.fr/">EPITA</a> Research Lab. (<a href="https://www.lre.epita.fr/">LRE</a>), Le Kremlin-Bicêtre, France. I work on computer vision, machine learning, and NLP applied to document analysis—especially historical documents—with emphasis on evaluation protocols and reproducible research.</p>
 
     <p class="home-actions">
       {% if site.cvUrl %}<a class="btn btn-primary" href="{{ site.cvUrl }}">CV / résumé (PDF)</a>{% endif %}
@@ -18,9 +18,9 @@ bodyClass: is-home
 
     <h2>Research topics</h2>
     <ul class="compact-list">
-      <li><strong>Theory:</strong> computer vision, NLP, information retrieval, machine learning</li>
-      <li><strong>Applications:</strong> document image analysis (historical, administrative, identity, medical…), interactive/assisted information extraction</li>
-      <li><strong>Method:</strong> digital humanities, datasets, competitions and evaluation protocols, open/reproducible research</li>
+      <li><strong>Core:</strong> document image analysis and indexing; text extraction and downstream NLP from noisy OCR in historical material; linking data across sources for structured outputs useful to the social sciences and humanities</li>
+      <li><strong>Broader applications:</strong> face analysis, document fraud detection, medical imaging—when projects call for it</li>
+      <li><strong>Practice:</strong> collaborative projects, datasets, competitions (e.g. ICDAR), open-source prototypes, and evaluation frameworks researchers can actually use</li>
     </ul>
 
     <h2>Profiles</h2>
@@ -34,7 +34,7 @@ bodyClass: is-home
     </p>
 
     <h2>Biography (short)</h2>
-    <p>I received an engineering degree (2008) and a Ph.D. (2013), both in Computer Science, from INSA Rennes. I then worked as a research engineer at the University of La Rochelle (2013–2018). Since 2018 I have been a lecturer at EPITA, with both teaching and research activities. My research interests include document image analysis (especially historical documents), interactive information extraction, evaluation of algorithms and systems, and open/reproducible research. I am involved in organizing scientific events (e.g. ICDAR competitions and workshops). I enjoy collaborating across fields and countries and am open to new collaborations.{% if site.cvUrl %} A fuller timeline appears in my <a href="{{ site.cvUrl }}">CV / résumé</a>.{% endif %}</p>
+    <p>I hold an engineering degree (2008) and a Ph.D. (2013) in Computer Science from <a href="https://www.insa-rennes.fr/">INSA Rennes</a> (thesis: interactive analysis of 18th-century register images). I was a research engineer at the <a href="https://l3i.univ-larochelle.fr/">L3i</a>, University of La Rochelle (2013–2018), then joined <a href="https://www.lre.epita.fr/">EPITA–LRE</a> as an assistant professor (2018–present). I have taught 1,200+ hours from undergraduate to master’s level (computer vision, machine learning, GPU programming, DevOps, and related topics). I am an active member of IAPR TC11 (“Reading Systems”) and coordinate or contribute to several collaborative projects—see <a href="{{ '/projects/' | url }}">Projects</a> and <a href="{{ '/publications/' | url }}">Publications</a>.{% if site.cvUrl %} A PDF résumé is available: <a href="{{ site.cvUrl }}">CV / résumé</a>.{% endif %}</p>
   </div>
 
   {% set recentBlog = collections.posts | recentBlogPosts(4) %}
