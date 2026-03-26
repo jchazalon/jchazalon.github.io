@@ -182,6 +182,47 @@ body.is-home .main-content {
   margin: 0.35rem 0 0;
 }
 
+.home-ongoing-list {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+}
+
+.home-ongoing-item {
+  margin: 0 0 1.1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-ongoing-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.home-ongoing-title {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  line-height: 1.25;
+  color: var(--fg);
+}
+
+.home-ongoing-summary {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.home-ongoing-summary .home-project-inline-meta {
+  white-space: normal;
+}
+
+.home-ongoing-more {
+  margin: 0.5rem 0 0;
+}
+
 .profiles-inline {
   margin: 0.35rem 0;
 }

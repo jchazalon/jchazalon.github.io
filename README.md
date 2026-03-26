@@ -2,6 +2,8 @@
 
 Personal academic site, built with [Eleventy](https://www.11ty.dev/) and deployed to **GitHub Pages** via **GitHub Actions**.
 
+**This is a documentation about how to build and maintain this website. I you want to visit this site, please go to <https://jchazalon.github.io>.**
+
 ## Local build
 
 ```bash

@@ -103,6 +103,29 @@ export default function (eleventyConfig) {
       .slice(0, limit);
   });
 
+  /**
+   * News entries from _data (YYYY-MM-DD `date`); newest first; same UTC calendar cutoff as `recentBlogPosts`.
+   */
+  eleventyConfig.addFilter("recentNewsItems", (items, maxCount = 3) => {
+    if (!items || !items.length) return [];
+    const limit = Number(maxCount) > 0 ? Number(maxCount) : 3;
+    const today = new Date();
+    const cutoffCal = new Date(
+      Date.UTC(today.getUTCFullYear() - 1, today.getUTCMonth(), today.getUTCDate())
+    );
+    const cutoffStr = cutoffCal.toISOString().slice(0, 10);
+    const sorted = [...items].sort((a, b) =>
+      String(b.date).localeCompare(String(a.date))
+    );
+    return sorted
+      .filter((item) => {
+        if (item?.date == null) return false;
+        const day = String(item.date).slice(0, 10);
+        return day >= cutoffStr;
+      })
+      .slice(0, limit);
+  });
+
   /** ISO date (YYYY-MM-DD) for <time datetime> and feeds */
   eleventyConfig.addFilter("isoDate", (value) => {
     if (value == null || value === "") return "";

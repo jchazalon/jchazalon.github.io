@@ -5,8 +5,9 @@ description: Teaching activities from undergraduate to master's level (EPITA and
 ---
 ## Teaching overview
 
-I teach computer science and engineering topics from undergraduate to master's level, with a focus on computer vision, machine learning, image processing, GPU programming, and devops.  
-Across institutions and years, my teaching load exceeds **1,200 hours**.
+I teach computer science and engineering topics from undergraduate to master's level, with a focus on computer vision, machine learning, image processing, GPU programming, and devops.
+
+**EPITA students** can find materials and course pages on [Moodle](https://moodle.epita.fr).
 
 ## Current and recent courses at EPITA (2018-present)
 
@@ -33,7 +34,3 @@ Across institutions and years, my teaching load exceeds **1,200 hours**.
 - Course design, evaluation creation, and exam correction.
 - Participation in launching and coordinating EPITA's IMAGE major.
 - Teaching from L1 to M2 in mixed lecture/lab formats.
-
-## Quantitative note
-
-The detailed historical table available in the CV sources reports **985 TD-equivalent hours** on the listed period up to 2023/2024, while the English CV summary reports **1,200+ total hours** including additional teaching activity.

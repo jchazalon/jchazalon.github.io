@@ -1,26 +1,49 @@
 ---
 layout: base.njk
 title: Contact & opportunities
-description: Get in touch, explore collaborations, PhD or internships, and book a meeting.
+description: Get in touch, open positions, collaborations, PhD or internships, and book a meeting.
 ---
 
 <h1>Contact &amp; opportunities</h1>
 
-<p class="lede">Practical contact, student opportunities, and scheduling. For detailed timelines and full publication lists, see the English résumé in the CV repository or the <a href="{{ '/publications/' | url }}">publications</a> page.</p>
+<p class="lede">Reach me by email or post, check <a href="#open-positions">open positions</a> for listed roles, read how to propose a collaboration or a PhD / internship, or open the calendar to book a conversation.</p>
 
 <h2 id="contact">Contact</h2>
 <p><strong>Postal address</strong><br>
 EPITA–LRE, 14–16 rue Voltaire, F-94270 Le Kremlin-Bicêtre, France</p>
 <p><strong>Phone</strong><br>
-<a href="tel:+33184071604">+33 1 84 07 16 04</a> (office) · <a href="tel:+33652261610">+33 6 52 26 16 10</a> (mobile)</p>
+<a href="tel:+33184071604">+33 1 84 07 16 04</a> (office)</p>
 <p><strong>Email</strong><br>
-<a href="mailto:joseph.chazalon@epita.fr">joseph.chazalon@epita.fr</a> (professional)<br>
-<a href="mailto:joseph.chazalon@gmail.com">joseph.chazalon@gmail.com</a> (personal)</p>
+<span class="obfuscated-email" data-user="joseph.chazalon" data-domain="epita.fr">joseph(dot)chazalon(at)epita(dot)fr</span> (professional)<br>
+<span class="obfuscated-email" data-user="joseph.chazalon" data-domain="gmail.com">joseph(dot)chazalon(at)gmail(dot)fr</span> (personal)</p>
 <p class="muted small">Languages: English and French (professional); Spanish (reading).</p>
 <p class="contact-profiles-note muted small">Profiles and publication indexes (GitHub, ORCID, Scholar, etc.) are linked from the <a href="{{ '/' | url }}">home page</a>.</p>
 
+<h2 id="open-positions">Open positions</h2>
+<p>Listed below are specific internship and job openings when they exist. There is nothing to advertise yet; this placeholder will be replaced with the role title, expected skills, duration or contract type, and a short description (including a link to the relevant <a href="{{ '/projects/' | url }}">project</a> once it is published).</p>
+<ul>
+  <li><strong>Internship</strong> — opening to be announced.</li>
+  <li><strong>Job</strong> — opening to be announced.</li>
+</ul>
+<p class="muted small">You can still write ahead of a formal posting; see <a href="#opportunities">PhD, internships &amp; collaborations</a> for what to send.</p>
+
 <h2 id="opportunities">PhD, internships &amp; collaborations</h2>
-<p>I am open to <strong>research collaborations</strong> in document image analysis, historical and administrative documents, NLP on noisy OCR, geohistorical data, evaluation, and closely related topics. <strong>Prospective PhD students</strong> and <strong>interns</strong> (MSc / engineering school) should email a concise CV, a short academic transcript summary, and one paragraph describing research interests aligned with <a href="{{ '/' | url }}">our themes</a> and <a href="{{ '/projects/' | url }}">ongoing projects</a>. Funding and intake periods depend on calls and lab capacity; I will reply when your profile matches an open opportunity.</p>
+<p>I am open to <strong>research collaborations</strong> in document image analysis, historical and administrative documents, NLP on noisy OCR, geohistorical data, evaluation, and closely related topics. <strong>Prospective PhD students</strong> and <strong>interns</strong> (MSc / engineering school) are welcome to email me. Please include a concise CV, a short academic transcript summary, and one paragraph describing research interests aligned with <a href="{{ '/' | url }}">our themes</a> and <a href="{{ '/projects/' | url }}">ongoing projects</a> so I can give informed feedback. Funding sources and intake periods vary with calls and lab capacity; I will do my best to reply and to outline realistic options for your situation.</p>
 
 <h2 id="schedule">Book an appointment</h2>
 <p>{% if site.scheduleUrl %}<a class="btn btn-primary" href="{{ site.scheduleUrl }}">Open booking calendar</a>{% else %}Add <code>scheduleUrl</code> to <code>src/_data/site.json</code> to show a booking link here.{% endif %}</p>
+
+
+<!-- Email obfuscation -->
+<script>
+  // Simple email de-obfuscation (Nunjucks template context is static HTML)
+  document.addEventListener("DOMContentLoaded", function() {
+    Array.from(document.querySelectorAll('.obfuscated-email')).forEach(function(el) {
+      var user = el.getAttribute('data-user');
+      var domain = el.getAttribute('data-domain');
+      var email = user + '@' + domain;
+      el.textContent = email;
+      el.outerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+    });
+  });
+</script>

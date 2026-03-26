@@ -19,6 +19,7 @@
    - Decide which projects/publications should get `image`/`thumb`
 3. **Final curation decision**
    - Decide if national conferences/workshops/invited talks remain in `publications.bib`
+      - In such case decide how to discriminate the visually, and/or enable their sorting/filtering.
    - Or move some to `news` / activity pages
 4. **Publication long-tail details (delegated to human by request)**
    - Remaining fine-grained bibliographic polish for unresolved records
@@ -27,6 +28,7 @@
 
 1. **Wire assets once provided**
    - Update JSON/BibTeX fields (`image`, `thumb`) and verify rendering
+2. Remove documentation fragments from templates (e.g. details for author, not visitors, at the top of the publications template)
 2. **Consistency cleanup pass**
    - Normalize venue naming patterns in `publications.bib` (`booktitle`, `journal` style consistency)
    - Optional author-name accent harmonization
@@ -63,15 +65,6 @@
 - `src/assets/**` is copied to `_site/assets/**`.
 - Use web paths like `/assets/images/...` in JSON/BibTeX.
 
-### Source files used
-
-- `../cv/docs-latex/cv-joseph-chazalon-en.tex`
-- `../cv/docs-latex/parts-en/10-general.tex`
-- `../cv/docs-latex/parts-en/20-research-activities.tex`
-- `../cv/docs-latex/parts-en/30-responsibilities.tex`
-- `../cv/docs-latex/parts-en/40-supervision.tex`
-- `../cv/docs-latex/parts-en/50-sci-activities.tex`
-- `../cv/docs-latex/joseph.bib`
 
 ## Files Most Relevant For Ongoing Work
 

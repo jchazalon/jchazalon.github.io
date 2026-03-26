@@ -16,16 +16,10 @@ bodyClass: is-home
       <a class="btn" href="{{ '/contact/' | url }}">Contact &amp; opportunities</a>
     </p>
 
-    <h2>Research topics</h2>
-    <ul class="compact-list">
-      <li><strong>Core:</strong> document image analysis and indexing; text extraction and downstream NLP from noisy OCR in historical material; linking data across sources for structured outputs useful to the social sciences and humanities</li>
-      <li><strong>Broader applications:</strong> face analysis, document fraud detection, medical imaging—when projects call for it</li>
-      <li><strong>Practice:</strong> collaborative projects, datasets, competitions (e.g. ICDAR), open-source prototypes, and evaluation frameworks researchers can actually use</li>
-    </ul>
-
     <h2>Profiles</h2>
     <p class="profiles-inline">
       <a href="https://github.com/jchazalon/">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/josephchazalon/">LinkedIn</a> ·
       <a href="https://orcid.org/0000-0002-3757-074X">ORCID</a> ·
       <a href="https://scholar.google.fr/citations?user=zu8wSDAAAAAJ">Google Scholar</a> ·
       <a href="https://dblp.org/pers/hd/c/Chazalon:Joseph">DBLP</a> ·
@@ -33,27 +27,54 @@ bodyClass: is-home
       <a href="https://www.idref.fr/171616030">IdRef</a>
     </p>
 
+    <h2>Recent projects</h2>
+    {% if projectsRecentHome and projectsRecentHome.length %}
+    <ul class="home-ongoing-list">
+      {% for project in projectsRecentHome %}
+      <li class="home-ongoing-item">
+        <h3 class="home-ongoing-title">{{ project.title }}</h3>
+        <p class="home-ongoing-summary">
+          {{ project.summary }}
+          <span class="home-project-inline-meta">
+            — <a href="{{ '/projects/' | url }}#{{ project.id }}">On this site</a>
+            {% if project.links and project.links.length %}
+            {% for link in project.links %}
+            · <a href="{{ link.url }}"{{ link.url | externalLinkAttrs }}>{{ link.label }}</a>
+            {% endfor %}
+            {% endif %}
+          </span>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="home-ongoing-more muted small">Older and complete listings: <a href="{{ '/projects/' | url }}">Projects</a>.</p>
+    {% else %}
+    <p class="muted">No recent projects listed.</p>
+    {% endif %}
+
     <h2>Biography (short)</h2>
     <p>I hold an engineering degree (2008) and a Ph.D. (2013) in Computer Science from <a href="https://www.insa-rennes.fr/">INSA Rennes</a> (thesis: interactive analysis of 18th-century register images). I was a research engineer at the <a href="https://l3i.univ-larochelle.fr/">L3i</a>, University of La Rochelle (2013–2018), then joined <a href="https://www.lre.epita.fr/">EPITA–LRE</a> as an assistant professor (2018–present). I have taught 1,200+ hours from undergraduate to master’s level (computer vision, machine learning, GPU programming, DevOps, and related topics). I am an active member of IAPR TC11 (“Reading Systems”) and coordinate or contribute to several collaborative projects—see <a href="{{ '/projects/' | url }}">Projects</a> and <a href="{{ '/publications/' | url }}">Publications</a>.{% if site.cvUrl %} A PDF résumé is available: <a href="{{ site.cvUrl }}">CV / résumé</a>.{% endif %}</p>
   </div>
 
-  {% set recentBlog = collections.posts | recentBlogPosts(4) %}
+  {% set recentNews = news | recentNewsItems(3) %}
+  {% set recentBlog = collections.posts | recentBlogPosts(3) %}
+  {% if recentNews.length or recentBlog.length %}
   <aside class="home-aside" aria-label="News and recent blog posts">
+    {% if recentNews.length %}
     <h2 class="home-aside-title">News</h2>
     <ul class="news-compact">
-      {% for item in news | sortNews %}
-      {% if loop.index <= 8 %}
+      {% for item in recentNews %}
       <li>
         <time datetime="{{ item.date }}">{{ item.date }}</time>
         <a href="{{ '/news/' | url }}#news-{{ item.date }}">{{ item.summary | default(item.title) }}</a>
       </li>
-      {% endif %}
       {% endfor %}
     </ul>
     <p class="home-aside-more"><a href="{{ '/news/' | url }}">All news →</a></p>
+    {% endif %}
 
     {% if recentBlog.length %}
-    <h2 class="home-aside-title home-aside-title--sub">Blog</h2>
+    <h2 class="home-aside-title{% if recentNews.length %} home-aside-title--sub{% endif %}">Blog</h2>
     <ul class="news-compact">
       {% for post in recentBlog %}
       <li>
@@ -65,4 +86,5 @@ bodyClass: is-home
     <p class="home-aside-more"><a href="{{ '/blog/' | url }}">All posts →</a></p>
     {% endif %}
   </aside>
+  {% endif %}
 </div>
