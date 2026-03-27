@@ -1,0 +1,22 @@
+---
+description: Repository workflow and quality checks
+alwaysApply: true
+---
+
+# Repository Workflow
+
+- Preserve existing unrelated changes in a dirty worktree; never revert user edits unless asked.
+- Keep edits minimal and scoped to the request.
+- For publication-related edits, preserve the project-ID cross-linking contract across data files.
+
+# Validation
+
+- After substantive edits, run `npm run build`.
+- If `npm` is unavailable, run `source ~/.nvm/nvm.sh` then rerun build.
+- Fix build-breaking issues introduced by the change before finalizing.
+
+# File Conventions
+
+- Eleventy input lives under `src/`; output is `_site/`.
+- Use web-root asset paths such as `/assets/images/...`.
+- Treat `publications.bib` as canonical publication source; custom fields are parsed by `src/_data/bibEntryExtras.cjs`.

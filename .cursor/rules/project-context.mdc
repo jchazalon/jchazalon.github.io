@@ -1,0 +1,17 @@
+---
+description: Load project context and task source
+alwaysApply: true
+---
+
+# Project Context Source of Truth
+
+- Read `AGENTS.md` at the start of any non-trivial task and treat it as the authoritative project context.
+- Use `TODO.md` only for outstanding work tracking; do not duplicate architecture notes there.
+- If `AGENTS.md` and code disagree, trust the code and propose an update to `AGENTS.md`.
+- When finishing work that changes conventions, data contracts, or structure, update `AGENTS.md`.
+
+# Prompt Hygiene
+
+- Ask for missing private information only when strictly required (for example personal URLs).
+- Keep user prompts short by relying on `AGENTS.md` context instead of asking for repeated background.
+- Prefer explicit validation criteria in task prompts: build/test command and expected output.

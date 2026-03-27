@@ -6,6 +6,17 @@ Personal academic site, built with [Eleventy](https://www.11ty.dev/) and deploye
 
 Context for AI agents is provided in [AGENTS.md](AGENTS.md).
 
+## Sample agent prompt
+
+Use this as a starting point when asking an AI agent to work on this repo:
+
+```text
+Use AGENTS.md as project context and conventions.
+Task: <what you want done>.
+Constraints: <optional hard constraints>.
+Validation: run npm run build and report the result.
+```
+
 ## Local build
 
 ```bash
