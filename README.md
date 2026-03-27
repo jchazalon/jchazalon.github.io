@@ -4,6 +4,8 @@ Personal academic site, built with [Eleventy](https://www.11ty.dev/) and deploye
 
 **This is a documentation about how to build and maintain this website. I you want to visit this site, please go to <https://jchazalon.github.io>.**
 
+Context for AI agents is provided in [AGENTS.md](AGENTS.md).
+
 ## Local build
 
 ```bash

@@ -1,84 +1,56 @@
-# TODO.md — Website Population Handoff
+# TODO — Remaining Tasks
 
-## Current Status (high level)
+> Project context, architecture, and agent instructions live in
+> [`AGENTS.md`](AGENTS.md).
 
-- Core site pages are populated from CV sources: `home`, `contact`, `teaching`, `projects`, `resources`, `news`.
-- `publications.bib` is no longer placeholder content; it contains a broad publication list with many DOI/URL/PDF enrichments.
-- Project coverage now includes major lines: `mezanno`, `soduco`, `ner-historical-docs`, `maptext-competitions`, `mobile-doc-capture`, `brainles-miccai`, `numis-coins`, `irisa-yvelines-archives`.
-- Build is healthy after all changes (`npm run build` succeeds).
+## Current Status
 
-## Remaining Tasks
+- Core site pages populated from CV sources: home, contact, teaching,
+  projects, resources, news.
+- `publications.bib` contains a broad publication list with DOI/URL/PDF
+  enrichments.
+- Major project cards created: mezanno, soduco, ner-historical-docs,
+  maptext-competitions, mobile-doc-capture, brainles-miccai, numis-coins,
+  irisa-yvelines-archives.
+- Build is healthy (`npm run build` succeeds).
 
-### Human-only (needs assets, private links, or policy decisions)
+## Human-Only Tasks (needs assets, private links, or decisions)
 
 1. **Provide real personal URLs** in `src/_data/site.json`
-   - Set `cvUrl` (public PDF URL)
-   - Set `scheduleUrl` (booking/calendar URL)
+   - `cvUrl` (public PDF URL)
+   - `scheduleUrl` (booking/calendar URL)
 2. **Provide/choose visual assets**
    - Project and publication thumbnails under `src/assets/images/`
-   - Decide which projects/publications should get `image`/`thumb`
-3. **Final curation decision**
-   - Decide if national conferences/workshops/invited talks remain in `publications.bib`
-      - In such case decide how to discriminate the visually, and/or enable their sorting/filtering.
-   - Or move some to `news` / activity pages
-4. **Publication long-tail details (delegated to human by request)**
+   - Decide which projects/publications get `image`/`thumb`
+3. **Final curation decisions**
+   - Keep national conferences/workshops/invited talks in `publications.bib`?
+     If so, decide how to discriminate visually and/or enable sorting/filtering.
+   - Or move some to `news` / activity pages.
+4. **Publication long-tail details**
    - Remaining fine-grained bibliographic polish for unresolved records
+     (human-owned by default; agents resume only if explicitly asked).
 
-### Agent-doable (no extra private data needed)
+## Agent-Doable Tasks (no private data needed)
 
 1. **Wire assets once provided**
-   - Update JSON/BibTeX fields (`image`, `thumb`) and verify rendering
-2. Remove documentation fragments from templates (e.g. details for author, not visitors, at the top of the publications template)
-2. **Consistency cleanup pass**
-   - Normalize venue naming patterns in `publications.bib` (`booktitle`, `journal` style consistency)
-   - Optional author-name accent harmonization
-3. **News/activity restructuring (if requested)**
-   - Move selected bibliography-like non-paper items into `news` or separate data files
-4. **Verification**
-   - Run `npm run build` and fix parse/render issues after each batch
+   - Update JSON/BibTeX fields (`image`, `thumb`) and verify rendering.
+2. **Remove documentation fragments from templates**
+   - E.g. author-facing notes at the top of `src/publications/index.njk`.
+3. **Consistency cleanup pass**
+   - Normalize venue naming in `publications.bib` (`booktitle`/`journal` style).
+   - Optional author-name accent harmonization.
+4. **News/activity restructuring** (if requested)
+   - Move selected non-paper bibliography items into `news` or separate
+     data files.
+5. **Verification**
+   - Run `npm run build` and fix any parse/render issues after each batch.
 
-## Important Knowledge For Next Agent
+## Key Files for Ongoing Work
 
-### Build + environment
-
-- Stack: Eleventy 3.
-- Build command: `npm run build`.
-- If `npm` not found, run: `source ~/.nvm/nvm.sh`.
-
-### Publication data pipeline
-
-- Bibliographic parsing: `src/_data/publications.js` + Citation.js.
-- Extra fields parser: `src/_data/bibEntryExtras.cjs`.
-- Extra supported fields in `publications.bib`:
-  - `projects`, `pdf`, `slides`, `poster`, `code`, `model`, `thumb`/`image`, `core`, `scimago`
-- `publications.js` only keeps supported CSL types; unsupported BibTeX entry types are filtered out.
-
-### Cross-linking contract
-
-- Project IDs are the shared namespace across files.
-- `publications.bib`: `projects = {id}` or `{id1 and id2}`
-- Resource JSON files: `projectIds: []`
-- Project enrichment is done in `src/projects/projects.11tydata.js`.
-
-### Asset serving rules
-
-- `src/assets/**` is copied to `_site/assets/**`.
-- Use web paths like `/assets/images/...` in JSON/BibTeX.
-
-
-## Files Most Relevant For Ongoing Work
-
-- `src/_data/site.json` (pending real URLs)
-- `src/_data/projects.json` (project cards and IDs)
-- `src/_data/news.json` (activity/news curation)
-- `src/_data/software.json`
-- `src/_data/datasets.json`
-- `src/_data/models.json`
+- `src/_data/site.json` — pending real URLs
+- `src/_data/projects.json` — project cards and IDs
+- `src/_data/news.json` — activity/news curation
+- `src/_data/software.json`, `datasets.json`, `models.json`
 - `publications.bib`
 - `src/publications/index.njk`
 - `src/projects/index.njk`
-
-## Notes
-
-- Publication-detail continuation is intentionally **human-owned by default** (per latest user direction), but agents can resume if explicitly requested.
-- Detailed per-step execution history was intentionally condensed here to keep handoff practical.
