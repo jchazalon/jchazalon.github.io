@@ -19,4 +19,4 @@ alwaysApply: true
 
 - Eleventy input lives under `src/`; output is `_site/`.
 - Use web-root asset paths such as `/assets/images/...`.
-- Treat `publications.bib` as canonical publication source; custom fields are parsed by `src/_data/bibEntryExtras.cjs`.
+- Treat `src/_data/bibliography.json` as canonical publications/talks source; `/publications.bib` is generated from it.

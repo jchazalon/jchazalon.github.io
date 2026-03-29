@@ -1,0 +1,3721 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "talk-2025-05-12-des-images-d-annuaires-aux-tables-de-per",
+      "category": "talk",
+      "subtype": "Invited talk",
+      "title": {
+        "text": "Des images d'annuaires aux tables de personnes",
+        "html": null
+      },
+      "authors": [],
+      "date": "2025-05-12",
+      "summary": "Presentation on extracting person-level information from historical directories and connecting document analysis outputs to humanities research workflows.",
+      "projectIds": [
+        "mezanno",
+        "soduco"
+      ],
+      "venue": {
+        "name": "Study day: Archives et femmes de cinema",
+        "location": "Cinematheque francaise / Universite Paris 8, Paris, France"
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "misc",
+        "key": "talk.2025.des-images-d-annuaires-a",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "gravier.25.dhq",
+      "category": "publication",
+      "subtype": "article-journal",
+      "title": {
+        "text": "Evaluating and Understanding Digital Transcription and Enrichment of City Directories of Paris Through Data Science (1787-1914)",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Julie",
+          "family": "Gravier",
+          "literal": null
+        },
+        {
+          "given": "S.",
+          "family": "Baciocchi",
+          "literal": null
+        },
+        {
+          "given": "P.",
+          "family": "Cristofoli",
+          "literal": null
+        },
+        {
+          "given": "B.",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "E.",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "N.",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "J.",
+          "family": "Perret",
+          "literal": null
+        },
+        {
+          "given": "S.",
+          "family": "Tual",
+          "literal": null
+        }
+      ],
+      "date": "2025",
+      "summary": null,
+      "projectIds": [
+        "soduco",
+        "mezanno",
+        "ner-historical-docs"
+      ],
+      "venue": {
+        "name": "Digital Humanities Quarterly",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "article",
+        "key": "gravier.25.dhq",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "tual.25.tpdl",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "An end-to-end pipeline for knowledge graph population from 19th-century land registry digitised tables",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Solenn",
+          "family": "Tual",
+          "literal": null
+        },
+        {
+          "given": "Nathalie",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        }
+      ],
+      "date": "2025",
+      "summary": null,
+      "projectIds": [
+        "soduco",
+        "mezanno",
+        "ner-historical-docs"
+      ],
+      "venue": {
+        "name": "29th International Conference on Theory and Practice of Digital Libraries (TPDL)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "tual.25.tpdl",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "pouliquen.25.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Verification of Dynamic Holographic Behavior in Identity Documents",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Glen",
+          "family": "Pouliquen",
+          "literal": null
+        },
+        {
+          "given": "Guillaume",
+          "family": "Chiron",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        },
+        {
+          "given": "Ahmad Montaser",
+          "family": "Awal",
+          "literal": null
+        }
+      ],
+      "date": "2025",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "pouliquen.25.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "lin.25.icdar-maptext",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "ICDAR 2025 Competition on Historical Map Text Detection, Recognition, and Linking",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Yijun",
+          "family": "Lin",
+          "literal": null
+        },
+        {
+          "given": "Solenn",
+          "family": "Tual",
+          "literal": null
+        },
+        {
+          "given": "Zekun",
+          "family": "Li",
+          "literal": null
+        },
+        {
+          "given": null,
+          "family": "others",
+          "literal": null
+        }
+      ],
+      "date": "2025",
+      "summary": null,
+      "projectIds": [
+        "maptext-competitions",
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "lin.25.icdar-maptext",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chen.24.plosone",
+      "category": "publication",
+      "subtype": "article-journal",
+      "title": {
+        "text": "Automatic vectorization of historical maps: A benchmark",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Yizi",
+          "family": "Chen",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Minh On Vu",
+          "family": "Ngoc",
+          "literal": null
+        },
+        {
+          "given": "Clement",
+          "family": "Mallet",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        }
+      ],
+      "date": "2024",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "PLoS ONE",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1371/journal.pone.0298217",
+        "url": null,
+        "volume": "19",
+        "issue": "2",
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://doi.org/10.1371/journal.pone.0298217",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "article",
+        "key": "chen.24.plosone",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "bernard.24.ekaw",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "PeGazUs: A Knowledge Graph Based Approach to Build Urban Perpetual Gazetteers",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Charly",
+          "family": "Bernard",
+          "literal": null
+        },
+        {
+          "given": "Solenn",
+          "family": "Tual",
+          "literal": null
+        },
+        {
+          "given": "Nathalie",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        }
+      ],
+      "date": "2024",
+      "summary": null,
+      "projectIds": [
+        "soduco",
+        "mezanno"
+      ],
+      "venue": {
+        "name": "Proceedings of EKAW",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": "https://hal.science/hal-04721538",
+        "volume": null,
+        "issue": null,
+        "pages": "364-381",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "bernard.24.ekaw",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "li.24.icdar-maptext",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "ICDAR 2024 Competition on Historical Map Text Detection, Recognition, and Linking",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Zekun",
+          "family": "Li",
+          "literal": null
+        },
+        {
+          "given": "Yijun",
+          "family": "Lin",
+          "literal": null
+        },
+        {
+          "given": "Yao-Yi",
+          "family": "Chiang",
+          "literal": null
+        },
+        {
+          "given": "Jerod",
+          "family": "Weinman",
+          "literal": null
+        },
+        {
+          "given": "Solenn",
+          "family": "Tual",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Nathalie",
+          "family": "Abadie",
+          "literal": null
+        }
+      ],
+      "date": "2024",
+      "summary": null,
+      "projectIds": [
+        "maptext-competitions",
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-031-70552-6_22",
+        "url": null,
+        "volume": "14809",
+        "issue": null,
+        "pages": "363-380",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "li.24.icdar-maptext",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "pouliquen.24.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Weakly Supervised Training for Hologram Verification in Identity Documents",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Glen",
+          "family": "Pouliquen",
+          "literal": null
+        },
+        {
+          "given": "Guillaume",
+          "family": "Chiron",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        },
+        {
+          "given": "Ahmad Montaser",
+          "family": "Awal",
+          "literal": null
+        }
+      ],
+      "date": "2024",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "17-33",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "pouliquen.24.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "tual.24.ichc",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "An approach to extract structured information from maps and registers guided by the history of the Napoleonic cadaster",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Solenn",
+          "family": "Tual",
+          "literal": null
+        },
+        {
+          "given": "Nathalie",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        }
+      ],
+      "date": "2024",
+      "summary": null,
+      "projectIds": [
+        "soduco",
+        "mezanno"
+      ],
+      "venue": {
+        "name": "30th International Conference on the History of Cartography (ICHC)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "tual.24.ichc",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "talk-2023-02-20-soduco-and-cross-source-geohistorical-da",
+      "category": "talk",
+      "subtype": "Invited seminar",
+      "title": {
+        "text": "SoDUCo and cross-source geohistorical data linking",
+        "html": null
+      },
+      "authors": [],
+      "date": "2023-02-20",
+      "summary": "Talk focused on extracting, aligning, and analyzing historical urban data from directories and maps to study Paris evolution.",
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "IXXI invited seminar",
+        "location": "Lyon, France"
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "misc",
+        "key": "talk.2023.soduco-and-cross-source-",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "tual.23.icdar-ner",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "A Benchmark of Nested Named Entity Recognition Approaches in Historical Structured Documents",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "S.",
+          "family": "Tual",
+          "literal": null
+        },
+        {
+          "given": "N.",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "B.",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "E.",
+          "family": "Carlinet",
+          "literal": null
+        }
+      ],
+      "date": "2023",
+      "summary": null,
+      "projectIds": [
+        "ner-historical-docs",
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-031-41682-8_8",
+        "url": "https://hal.science/hal-03994759v2",
+        "volume": null,
+        "issue": null,
+        "pages": "115-131",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "tual.23.icdar-ner",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "bernet.23.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Linear Object Detection in Document Images using Multiple Object Tracking",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "P.",
+          "family": "Bernet",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "E.",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "A.",
+          "family": "Bourquelot",
+          "literal": null
+        },
+        {
+          "given": "E.",
+          "family": "Puybareau",
+          "literal": null
+        }
+      ],
+      "date": "2023",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-031-41734-4_28",
+        "url": "https://arxiv.org/abs/2305.16968",
+        "volume": null,
+        "issue": null,
+        "pages": "454-471",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "bernet.23.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "dumenieu.23.arxiv",
+      "category": "publication",
+      "subtype": "article-journal",
+      "title": {
+        "text": "Entry Separation using a Mixed Visual and Textual Language Model: Application to 19th century French Trade Directories",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "B.",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "E.",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "N.",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        }
+      ],
+      "date": "2023",
+      "summary": null,
+      "projectIds": [
+        "ner-historical-docs",
+        "soduco"
+      ],
+      "venue": {
+        "name": "arXiv preprint arXiv:2302.08948",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": "https://arxiv.org/abs/2302.08948",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://arxiv.org/pdf/2302.08948.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "article",
+        "key": "dumenieu.23.arxiv",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "mehta.22.melba",
+      "category": "publication",
+      "subtype": "article-journal",
+      "title": {
+        "text": "QU-BraTS: MICCAI BraTS 2020 challenge on quantifying uncertainty in brain tumor segmentation-analysis of ranking scores and benchmarking results",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Raghav",
+          "family": "Mehta",
+          "literal": null
+        },
+        {
+          "given": "A.",
+          "family": "Filos",
+          "literal": null
+        },
+        {
+          "given": "U.",
+          "family": "Baid",
+          "literal": null
+        },
+        {
+          "given": "C.",
+          "family": "Sako",
+          "literal": null
+        },
+        {
+          "given": "R.",
+          "family": "McKinley",
+          "literal": null
+        },
+        {
+          "given": "M.",
+          "family": "Rebsamen",
+          "literal": null
+        },
+        {
+          "given": "K.",
+          "family": "Datwyler",
+          "literal": null
+        },
+        {
+          "given": null,
+          "family": "others",
+          "literal": null
+        }
+      ],
+      "date": "2022",
+      "summary": null,
+      "projectIds": [
+        "brainles-miccai"
+      ],
+      "venue": {
+        "name": "The Journal of Machine Learning for Biomedical Imaging",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": "https://www.melba-journal.org/papers/2022:026.html",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://www.melba-journal.org/papers/2022:026.html",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "article",
+        "key": "mehta.22.melba",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "abadie.22.das",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "A Benchmark of Named Entity Recognition Approaches in Historical Documents - Application to 19th Century French Directories",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Nathalie",
+          "family": "Abadie",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        }
+      ],
+      "date": "2022",
+      "summary": null,
+      "projectIds": [
+        "ner-historical-docs",
+        "soduco"
+      ],
+      "venue": {
+        "name": "Document Analysis Systems (DAS)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-031-06555-2_30",
+        "url": "https://hal.science/hal-03698609v1",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-03698609v1/file/preprint_das_2022_abadie_carlinet_chazalon_dumenieu.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "abadie.22.das",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.21.icdar.1",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Revisiting the Coco Panoptic Metric to Enable Visual and Qualitative Analysis of Historical Map Instance Segmentation",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        }
+      ],
+      "date": "2021-09",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the 16th International Conference on Document Analysis and Recognition (ICDAR'21)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-86337-1_25",
+        "url": null,
+        "volume": "12824",
+        "issue": null,
+        "pages": "367-382",
+        "publisher": "Springer, Cham"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://www.lrde.epita.fr/dload/papers/chazalon.21.icdar.1.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [
+          {
+            "url": "https://www.lrde.epita.fr/dload/papers/chazalon.21.icdar.1.poster.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.21.icdar.1",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.21.icdar.2",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "ICDAR 2021 Competition on Historical Map Segmentation",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Yizi",
+          "family": "Chen",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Clement",
+          "family": "Mallet",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        },
+        {
+          "given": "Vincent",
+          "family": "Nguyen",
+          "literal": null
+        },
+        {
+          "given": "Nam",
+          "family": "Nguyen",
+          "literal": null
+        },
+        {
+          "given": "Josef",
+          "family": "Baloun",
+          "literal": null
+        },
+        {
+          "given": "Ladislav",
+          "family": "Lenc",
+          "literal": null
+        },
+        {
+          "given": "Pavel",
+          "family": "Kral",
+          "literal": null
+        }
+      ],
+      "date": "2021-09",
+      "summary": null,
+      "projectIds": [
+        "soduco",
+        "maptext-competitions"
+      ],
+      "venue": {
+        "name": "Proceedings of the 16th International Conference on Document Analysis and Recognition (ICDAR'21)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-86337-1_46",
+        "url": null,
+        "volume": "12824",
+        "issue": null,
+        "pages": "693-707",
+        "publisher": "Springer, Cham"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/chazalon.21.icdar.2.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.21.icdar.2",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chen.21.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Vectorization of Historical Maps Using Deep Edge Filtering and Closed Shape Extraction",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Yizi",
+          "family": "Chen",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        }
+      ],
+      "date": "2021-09",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the 16th International Conference on Document Analysis and Recognition (ICDAR'21)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-86337-1_34",
+        "url": null,
+        "volume": "12824",
+        "issue": null,
+        "pages": "510-525",
+        "publisher": "Springer, Cham"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/chen.21.icdar.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chen.21.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chen.21.dgmm",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Combining Deep Learning and Mathematical Morphology for Historical Map Segmentation",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Yizi",
+          "family": "Chen",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Dumenieu",
+          "literal": null
+        },
+        {
+          "given": "Julien",
+          "family": "Perret",
+          "literal": null
+        }
+      ],
+      "date": "2021-05",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the IAPR International Conference on Discrete Geometry and Mathematical Morphology (DGMM)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-76657-3_5",
+        "url": null,
+        "volume": "12708",
+        "issue": null,
+        "pages": "79-92",
+        "publisher": "Springer"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/chen.2021.dgmm.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chen.21.dgmm",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "movn.21.bmvc",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Introducing the Boundary-Aware Loss for Deep Image Segmentation",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Minh On Vu",
+          "family": "Ngoc",
+          "literal": null
+        },
+        {
+          "given": "Yizi",
+          "family": "Chen",
+          "literal": null
+        },
+        {
+          "given": "Nicolas C.",
+          "family": "Boutry",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Edwin",
+          "family": "Carlinet",
+          "literal": null
+        },
+        {
+          "given": "Jonathan",
+          "family": "Fabrizio",
+          "literal": null
+        },
+        {
+          "given": "Clement",
+          "family": "Mallet",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        }
+      ],
+      "date": "2021",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "Proceedings of the 32nd British Machine Vision Conference (BMVC)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://www.lrde.epita.fr/dload/papers/movn.21.bmvc.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "movn.21.bmvc",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "boutry.20.brainles",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Using Separated Inputs for Multimodal Brain Tumor Segmentation with 3D U-Net-like Architectures",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Nicolas",
+          "family": "Boutry",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Elodie",
+          "family": "Puybareau",
+          "literal": null
+        },
+        {
+          "given": "Guillaume",
+          "family": "Tochon",
+          "literal": null
+        },
+        {
+          "given": "Hugues",
+          "family": "Talbot",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        }
+      ],
+      "date": "2019",
+      "summary": null,
+      "projectIds": [
+        "brainles-miccai"
+      ],
+      "venue": {
+        "name": "Proceedings of the 4th International Workshop, BrainLes 2019, Held in Conjunction with MICCAI 2019",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-46640-4_18",
+        "url": null,
+        "volume": "11992",
+        "issue": null,
+        "pages": "187-199",
+        "publisher": "Springer"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/boutry.20.brainles.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "boutry.20.brainles",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "buatois.19.brainles",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Two Stages CNN-Based Segmentation of Gliomas, Uncertainty Quantification and Prediction of Overall Patient Survival",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Thibault",
+          "family": "Buatois",
+          "literal": null
+        },
+        {
+          "given": "Elodie",
+          "family": "Puybareau",
+          "literal": null
+        },
+        {
+          "given": "Guillaume",
+          "family": "Tochon",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        }
+      ],
+      "date": "2019",
+      "summary": null,
+      "projectIds": [
+        "brainles-miccai"
+      ],
+      "venue": {
+        "name": "International MICCAI Brainlesion Workshop",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-46643-5_16",
+        "url": null,
+        "volume": "11992",
+        "issue": null,
+        "pages": "167-178",
+        "publisher": "Springer"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/buatois.19.brainles.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "buatois.19.brainles",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "puybareau.18.rfiap",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Segmentation des hyperintensites de la matiere blanche en quelques secondes a l'aide d'un reseau de neurones convolutif et de transfert d'apprentissage",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Elodie",
+          "family": "Puybareau",
+          "literal": null
+        },
+        {
+          "given": "Yongchao",
+          "family": "Xu",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        }
+      ],
+      "date": "2018-06",
+      "summary": null,
+      "projectIds": [
+        "brainles-miccai"
+      ],
+      "venue": {
+        "name": "Actes du congres Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP), session speciale “Deep Learning, deep in France”",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/puybareau.18.rfiap.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "puybareau.18.rfiap",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "rusinol.17.mtap",
+      "category": "publication",
+      "subtype": "article-journal",
+      "title": {
+        "text": "Augmented Songbook: an Augmented Reality Educational Application for Raising Music Awareness",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Marcal",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        }
+      ],
+      "date": "2018-06",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Multimedia Tools and Applications",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/s11042-017-4991-4",
+        "url": null,
+        "volume": "77",
+        "issue": "11",
+        "pages": "13773-13798",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/rusinol.17.mtap.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "article",
+        "key": "rusinol.17.mtap",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "puybareau.18.brainles",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Segmentation of Gliomas and Prediction of Patient Overall Survival: A Simple and Fast Procedure",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Elodie",
+          "family": "Puybareau",
+          "literal": null
+        },
+        {
+          "given": "Guillaume",
+          "family": "Tochon",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jonathan",
+          "family": "Fabrizio",
+          "literal": null
+        }
+      ],
+      "date": "2018",
+      "summary": null,
+      "projectIds": [
+        "brainles-miccai"
+      ],
+      "venue": {
+        "name": "Proceedings of the Workshop on Brain Lesions (BrainLes), in conjunction with MICCAI",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-11726-9_18",
+        "url": null,
+        "volume": "11384",
+        "issue": null,
+        "pages": "199-209",
+        "publisher": "Springer"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/puybareau.18.brainles.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "puybareau.18.brainles",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "xu.18.brainles",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "White Matter Hyperintensities Segmentation In a Few Seconds Using Fully Convolutional Network and Transfer Learning",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Yongchao",
+          "family": "Xu",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        },
+        {
+          "given": "Elodie",
+          "family": "Puybareau",
+          "literal": null
+        },
+        {
+          "given": "Isabelle",
+          "family": "Bloch",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        }
+      ],
+      "date": "2018",
+      "summary": null,
+      "projectIds": [
+        "brainles-miccai"
+      ],
+      "venue": {
+        "name": "Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries—3rd International Workshop, BrainLes 2017, Held in Conjunction with MICCAI 2017, Revised Selected Papers",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-319-75238-9_42",
+        "url": null,
+        "volume": "10670",
+        "issue": null,
+        "pages": "501-514",
+        "publisher": "Springer, Cham"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/xu.18.brainles.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "xu.18.brainles",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "ming.18.icpr",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "FaceLiveNet: End-to-End Networks Combining Face Verification with Interactive Facial Expression-Based Liveness Detection",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Zuheng",
+          "family": "Ming",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Muhammad Muzzamil",
+          "family": "Luqman",
+          "literal": null
+        },
+        {
+          "given": "Muriel",
+          "family": "Visani",
+          "literal": null
+        },
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        }
+      ],
+      "date": "2018",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Pattern Recognition (ICPR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICPR.2018.8545274",
+        "url": "https://ieeexplore.ieee.org/document/8545274",
+        "volume": null,
+        "issue": null,
+        "pages": "3507-3512",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-02552657v1/document",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "ming.18.icpr",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.17.icdar-ost",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "SmartDoc 2017 Video Capture: Mobile Document Acquisition in Video Mode",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "P.",
+          "family": "Gomez-Kramer",
+          "literal": null
+        },
+        {
+          "given": "J.-C.",
+          "family": "Burie",
+          "literal": null
+        },
+        {
+          "given": "M.",
+          "family": "Coustaty",
+          "literal": null
+        },
+        {
+          "given": "S.",
+          "family": "Eskenazi",
+          "literal": null
+        },
+        {
+          "given": "M.",
+          "family": "Luqman",
+          "literal": null
+        },
+        {
+          "given": "N.",
+          "family": "Nayef",
+          "literal": null
+        },
+        {
+          "given": "M.",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "N.",
+          "family": "Sidere",
+          "literal": null
+        },
+        {
+          "given": "J.-M.",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2017-11",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the 1st International Workshop on Open Services and Tools for Document Analysis (ICDAR-OST)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2017.306",
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "11-16",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/chazalon.17.icdar-ost.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.17.icdar-ost",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "drapeau.17.grec",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Extraction of Ancient Map Contents Using Trees of Connected Components",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Jordan",
+          "family": "Drapeau",
+          "literal": null
+        },
+        {
+          "given": "Thierry",
+          "family": "Geraud",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        },
+        {
+          "given": "Veronique",
+          "family": "Eglin",
+          "literal": null
+        },
+        {
+          "given": "Stephane",
+          "family": "Bres",
+          "literal": null
+        }
+      ],
+      "date": "2017-11",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "Proceedings of the 12th IAPR International Workshop on Graphics Recognition (GREC)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1007/978-3-030-02284-6_9",
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "3-4",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/drapeau.17.grec.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "drapeau.17.grec",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "royer.17.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Benchmarking Keypoint Filtering Approaches for Document Image Matching",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "E.",
+          "family": "Royer",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "M.",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "F.",
+          "family": "Bouchara",
+          "literal": null
+        }
+      ],
+      "date": "2017-11",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the 14th International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2017.64",
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "343-348",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "http://www.lrde.epita.fr/dload/papers/royer.17.icdar.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "royer.17.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "nayef.17.icdar-rrcmlt",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "ICDAR2017 Robust Reading Challenge on Multi-Lingual Scene Text Detection and Script Identification - RRC-MLT",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Nibal",
+          "family": "Nayef",
+          "literal": null
+        },
+        {
+          "given": "Fei",
+          "family": "Yin",
+          "literal": null
+        },
+        {
+          "given": "Imen",
+          "family": "Bizid",
+          "literal": null
+        },
+        {
+          "given": "Hyunsoo",
+          "family": "Choi",
+          "literal": null
+        },
+        {
+          "given": "Yuan",
+          "family": "Feng",
+          "literal": null
+        },
+        {
+          "given": "Dimosthenis",
+          "family": "Karatzas",
+          "literal": null
+        },
+        {
+          "given": "Zhenbo",
+          "family": "Luo",
+          "literal": null
+        },
+        {
+          "given": "Umapada",
+          "family": "Pal",
+          "literal": null
+        },
+        {
+          "given": "Christophe",
+          "family": "Rigaud",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Wafa",
+          "family": "Khlif",
+          "literal": null
+        },
+        {
+          "given": "Muhammad Muzzamil",
+          "family": "Luqman",
+          "literal": null
+        },
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        },
+        {
+          "given": "Cheng-Lin",
+          "family": "Liu",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2017",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2017.237",
+        "url": "https://ieeexplore.ieee.org/document/8270168",
+        "volume": null,
+        "issue": null,
+        "pages": "1454-1459",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-02889922",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "nayef.17.icdar-rrcmlt",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "sidere.17.jcdl",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "TouchDoc: A Tool to Bridge the Gap between Physical and Digital Libraries",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Nicolas",
+          "family": "Sidere",
+          "literal": null
+        },
+        {
+          "given": "Cyrille",
+          "family": "Suire",
+          "literal": null
+        },
+        {
+          "given": "Mickael",
+          "family": "Coustaty",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2017",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the Joint Conference on Digital Libraries (JCDL)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "332-333",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "sidere.17.jcdl",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "ming.17.iccvw",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Simple Triplet Loss Based on Intra/Inter-Class Metric Learning for Face Verification",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Zuheng",
+          "family": "Ming",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Muhammad Muzzamil",
+          "family": "Luqman",
+          "literal": null
+        },
+        {
+          "given": "Muriel",
+          "family": "Visani",
+          "literal": null
+        },
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        }
+      ],
+      "date": "2017",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the IEEE International Conference on Computer Vision Workshops (ICCV Workshops)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "1656-1664",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "ming.17.iccvw",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "rusinol.15.icdar-detectors",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "A comparative study of local detectors and descriptors for mobile document classification",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Marcal",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        },
+        {
+          "given": "Josep",
+          "family": "Llados",
+          "literal": null
+        }
+      ],
+      "date": "2015",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2015.7333831",
+        "url": "https://ieeexplore.ieee.org/document/7333831",
+        "volume": null,
+        "issue": null,
+        "pages": "596-600",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://marcalr.github.io/pdfs/ICDAR15b.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "rusinol.15.icdar-detectors",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.15.icdar-groundtruthing",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "A semi-automatic groundtruthing tool for mobile-captured document segmentation",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Marcal",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        },
+        {
+          "given": "Josep",
+          "family": "Llados",
+          "literal": null
+        }
+      ],
+      "date": "2015",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2015.7333836",
+        "url": "https://ieeexplore.ieee.org/document/7333836",
+        "volume": null,
+        "issue": null,
+        "pages": "621-625",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.15.icdar-groundtruthing",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "burie.15.icdar-smartdoc",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "ICDAR2015 competition on smartphone document capture and OCR (SmartDoc)",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Mickael",
+          "family": "Coustaty",
+          "literal": null
+        },
+        {
+          "given": "Sebastien",
+          "family": "Eskenazi",
+          "literal": null
+        },
+        {
+          "given": "Muhammad Muzzamil",
+          "family": "Luqman",
+          "literal": null
+        },
+        {
+          "given": "Maroua",
+          "family": "Mehri",
+          "literal": null
+        },
+        {
+          "given": "Nibal",
+          "family": "Nayef",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        },
+        {
+          "given": "Sophea",
+          "family": "Prum",
+          "literal": null
+        },
+        {
+          "given": "Marcal",
+          "family": "Rusinol",
+          "literal": null
+        }
+      ],
+      "date": "2015",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2015.7333943",
+        "url": "https://ieeexplore.ieee.org/document/7333943",
+        "volume": null,
+        "issue": null,
+        "pages": "1161-1165",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-01319909v1/document",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "burie.15.icdar-smartdoc",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.15.icdar-filtering",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Improving document matching performance by local descriptor filtering",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Marcal",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2015",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2015.7333957",
+        "url": "https://ieeexplore.ieee.org/document/7333957",
+        "volume": null,
+        "issue": null,
+        "pages": "1216-1220",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-01337266v1/file/final_rc2-20160211.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.15.icdar-filtering",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "nayef.15.icdar-smartdocqa",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "SmartDoc-QA: A dataset for quality assessment of smartphone captured document images - single and multiple distortions",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Nibal",
+          "family": "Nayef",
+          "literal": null
+        },
+        {
+          "given": "Muhammad Muzzamil",
+          "family": "Luqman",
+          "literal": null
+        },
+        {
+          "given": "Sophea",
+          "family": "Prum",
+          "literal": null
+        },
+        {
+          "given": "Sebastien",
+          "family": "Eskenazi",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2015",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2015.7333960",
+        "url": "https://ieeexplore.ieee.org/document/7333960",
+        "volume": null,
+        "issue": null,
+        "pages": "1231-1235",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "nayef.15.icdar-smartdocqa",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "rusinol.14.das-focus",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Combining Focus Measure Operators to Predict OCR Accuracy in Mobile-Captured Document Images",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Marcal",
+          "family": "Rusinol",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2014",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Document Analysis Systems",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "181-185",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "rusinol.14.das-focus",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "nayef.14.das-superres",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Efficient Example-Based Super-Resolution of Single Text Images Based on Selective Patch Processing",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Nibal",
+          "family": "Nayef",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Petra",
+          "family": "Gomez-Kramer",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2014",
+      "summary": null,
+      "projectIds": [
+        "mobile-doc-capture"
+      ],
+      "venue": {
+        "name": "Document Analysis Systems",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "227-231",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "nayef.14.das-superres",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "say.14.ipta",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Segmentation system and its evaluation for gray scale coin documents",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Vortana",
+          "family": "Say",
+          "literal": null
+        },
+        {
+          "given": "Mickael",
+          "family": "Coustaty",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Jean-Christophe",
+          "family": "Burie",
+          "literal": null
+        },
+        {
+          "given": "Jean-Marc",
+          "family": "Ogier",
+          "literal": null
+        }
+      ],
+      "date": "2014",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "International Conference on Image Processing Theory, Tools and Applications (IPTA)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/IPTA.2014.7001960",
+        "url": "https://ieeexplore.ieee.org/document/7001960",
+        "volume": null,
+        "issue": null,
+        "pages": "209-214",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-01247954v1/document",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "say.14.ipta",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.13.phd",
+      "category": "publication",
+      "subtype": "thesis",
+      "title": {
+        "text": "Interpretation contextuelle et assistee de fonds d'archives numerises : application a des registres de vente du XVIIIe siecle",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        }
+      ],
+      "date": "2013",
+      "summary": null,
+      "projectIds": [
+        "soduco"
+      ],
+      "venue": {
+        "name": "Institut national des sciences appliquees de Rennes",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "publisher": "Institut national des sciences appliquees de Rennes"
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "phdthesis",
+        "key": "chazalon.13.phd",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.12.drr",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Iterative analysis of document collections enables efficient human-initiated interaction",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Couasnon",
+          "literal": null
+        }
+      ],
+      "date": "2012",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "Document Recognition and Retrieval (DRR)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "82970L",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.12.drr",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.12.das",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "A Simple and Uniform Way to Introduce Complimentary Asynchronous Interaction Models in an Existing Document Analysis System",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Couasnon",
+          "literal": null
+        },
+        {
+          "given": "Aurelie",
+          "family": "Lemaitre",
+          "literal": null
+        }
+      ],
+      "date": "2012",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "Document Analysis Systems",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/DAS.2012.11",
+        "url": "https://inria.hal.science/hal-00686853v1",
+        "volume": null,
+        "issue": null,
+        "pages": "399-403",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://inria.hal.science/hal-00686853v1/document",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.12.das",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.11.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Iterative Analysis of Pages in Document Collections for Efficient User Interaction",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Couasnon",
+          "literal": null
+        },
+        {
+          "given": "Aurelie",
+          "family": "Lemaitre",
+          "literal": null
+        }
+      ],
+      "date": "2011",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1109/ICDAR.2011.107",
+        "url": "https://ieeexplore.ieee.org/document/6065362",
+        "volume": null,
+        "issue": null,
+        "pages": "503-507",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [
+          {
+            "url": "https://hal.science/hal-00644927/file/20110629-final-RC1-pdfexpress-ok-PID1937303.pdf",
+            "label": null,
+            "description": null
+          }
+        ],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.11.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "guichard.11.icdar",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Exploiting Collection Level for Improving Assisted Handwritten Word Transcription of Historical Documents",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Laurent",
+          "family": "Guichard",
+          "literal": null
+        },
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Couasnon",
+          "literal": null
+        }
+      ],
+      "date": "2011",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)",
+        "location": null
+      },
+      "publication": {
+        "doi": null,
+        "url": null,
+        "volume": null,
+        "issue": null,
+        "pages": "875-879",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "guichard.11.icdar",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    },
+    {
+      "id": "chazalon.10.drr",
+      "category": "publication",
+      "subtype": "paper-conference",
+      "title": {
+        "text": "Using definite clause grammars to build a global system for analyzing collections of documents",
+        "html": null
+      },
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Chazalon",
+          "literal": null
+        },
+        {
+          "given": "Bertrand",
+          "family": "Couasnon",
+          "literal": null
+        }
+      ],
+      "date": "2010",
+      "summary": null,
+      "projectIds": [],
+      "venue": {
+        "name": "Document Recognition and Retrieval (DRR)",
+        "location": null
+      },
+      "publication": {
+        "doi": "10.1117/12.840436",
+        "url": "https://doi.org/10.1117/12.840436",
+        "volume": null,
+        "issue": null,
+        "pages": "75340R",
+        "publisher": null
+      },
+      "ranking": {
+        "core": null,
+        "scimago": null
+      },
+      "links": {
+        "pdf": [],
+        "slides": [],
+        "poster": [],
+        "event": [],
+        "video": []
+      },
+      "image": null,
+      "related": {
+        "publicationIds": []
+      },
+      "bibtex": {
+        "type": "inproceedings",
+        "key": "chazalon.10.drr",
+        "includeInDownload": true,
+        "fields": {}
+      }
+    }
+  ]
+}

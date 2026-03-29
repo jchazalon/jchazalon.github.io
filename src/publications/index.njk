@@ -1,18 +1,18 @@
 ---
 layout: base.njk
 title: Publications
-description: Publications from publications.bib, with links to related projects.
+description: Publications and links, sourced from bibliography.json.
 ---
 {% from "partials/project-pills.njk" import pills %}
-{% from "partials/pub-icons.njk" import iconPublisher, iconDoi, iconPdf, iconSlides, iconPoster, iconCode, iconModel %}
+{% from "partials/pub-icons.njk" import iconPublisher, iconDoi, iconPdf, iconSlides, iconPoster %}
 
 <h1>Publications</h1>
-<p class="lede-small">Bibliography: <a href="{{ '/publications.bib' | url }}"><code>publications.bib</code></a>. Projects: <code>projects = {id}</code>. Links: <code>pdf</code>, <code>slides</code>, <code>poster</code>, <code>code</code>, <code>model</code>. Thumbnail: <code>thumb</code>. Rankings: <code>core</code>, <code>scimago</code> (e.g. <code>A*</code>, <code>Q1</code>).</p>
+<p class="lede-small">Source of truth: <code>src/_data/bibliography.json</code>. Download generated BibTeX: <a href="{{ '/publications.bib' | url }}"><code>publications.bib</code></a>.</p>
 
 <ol class="pub-list">
   {% for pub in publications %}
   {% set primary = pub | pubPrimaryLink %}
-  <li class="pub-item">
+  <li class="pub-item" id="{{ pub.id }}">
     <div class="pub-item-row">
       {% if pub.thumb %}
       {% if primary %}
@@ -27,7 +27,7 @@ description: Publications from publications.bib, with links to related projects.
       {% endif %}
       <div class="pub-item-body">
         <p class="pub-authors">{{ pub.author | formatAuthors }}</p>
-        <p class="pub-title">{{ pub.title }}</p>
+        <p class="pub-title">{% if pub.titleHtml %}{{ pub.titleHtml | safe }}{% else %}{{ pub.title }}{% endif %}</p>
         <p class="pub-venue">
           {% set y = pub.issued | pubYear %}
           {% if y %}{{ y }}. {% endif %}
@@ -58,13 +58,28 @@ description: Publications from publications.bib, with links to related projects.
           {% for url in pub.bibLinks.poster %}
           <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconPoster() }}</span><span>{{ url | bibLinkLabel('poster', loop.index, pub.bibLinks.poster.length) }}</span></a>
           {% endfor %}
-          {% for url in pub.bibLinks.code %}
-          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconCode() }}</span><span>{{ url | bibLinkLabel('code', loop.index, pub.bibLinks.code.length) }}</span></a>
-          {% endfor %}
-          {% for url in pub.bibLinks.model %}
-          <a class="pub-link" href="{{ url }}" title="{{ url }}"><span class="pub-link-ico" aria-hidden="true">{{ iconModel() }}</span><span>{{ url | bibLinkLabel('model', loop.index, pub.bibLinks.model.length) }}</span></a>
-          {% endfor %}
         </div>
+        {% if pub.linkedResources.software.length or pub.linkedResources.datasets.length or pub.linkedResources.models.length %}
+        <p class="small muted">
+          Related resources:
+          {% for r in pub.linkedResources.software %}
+          <a href="{{ r.url }}"{{ r.url | externalLinkAttrs }}>Software{% if pub.linkedResources.software.length > 1 %} {{ loop.index }}{% endif %}</a>{% if not loop.last or pub.linkedResources.datasets.length or pub.linkedResources.models.length %} · {% endif %}
+          {% endfor %}
+          {% for r in pub.linkedResources.datasets %}
+          <a href="{{ r.url }}"{{ r.url | externalLinkAttrs }}>Dataset{% if pub.linkedResources.datasets.length > 1 %} {{ loop.index }}{% endif %}</a>{% if not loop.last or pub.linkedResources.models.length %} · {% endif %}
+          {% endfor %}
+          {% for r in pub.linkedResources.models %}
+          <a href="{{ r.url }}"{{ r.url | externalLinkAttrs }}>Model{% if pub.linkedResources.models.length > 1 %} {{ loop.index }}{% endif %}</a>{% if not loop.last %} · {% endif %}
+          {% endfor %}
+          (<a href="{{ '/resources/' | url }}">all resources</a>)
+        </p>
+        {% endif %}
+        {% if pub.bibtex %}
+        <details class="pub-cite">
+          <summary>Cite (BibTeX)</summary>
+          <pre>{{ pub.bibtex }}</pre>
+        </details>
+        {% endif %}
         {{ pills(pub.projectIds, projects) }}
       </div>
     </div>

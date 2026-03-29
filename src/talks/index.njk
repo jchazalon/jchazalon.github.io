@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Talks
+description: Invited talks, seminars, tutorials, and conference presentations.
+---
+{% from "partials/project-pills.njk" import pills %}
+
+<h1>Talks</h1>
+<p class="lede-small">Invited talks, seminars, tutorials, and selected conference presentations (from <code>src/_data/bibliography.json</code>).</p>
+
+<ul class="news-list">
+  {% for talk in talks | sortNews %}
+  <li class="news-item" id="talk-{{ talk.date }}-{{ loop.index }}">
+    <time datetime="{{ talk.date }}">{{ talk.date }}</time>
+    <h3 class="news-title">{% if talk.titleHtml %}{{ talk.titleHtml | safe }}{% else %}{{ talk.title }}{% endif %}</h3>
+    <p class="news-summary">
+      {% if talk.kind %}<strong>{{ talk.kind }}</strong>{% endif %}
+      {% if talk.event %}{% if talk.kind %} · {% endif %}{{ talk.event }}{% endif %}
+      {% if talk.location %} — {{ talk.location }}{% endif %}
+    </p>
+    {% if talk.summary %}<p>{{ talk.summary }}</p>{% endif %}
+    {% if talk.href or talk.slides or talk.video %}
+    <p>
+      {% if talk.href %}<a href="{{ talk.href }}"{{ talk.href | externalLinkAttrs }}>Event page</a>{% endif %}
+      {% if talk.slides %}{% if talk.href %} · {% endif %}<a href="{{ talk.slides }}"{{ talk.slides | externalLinkAttrs }}>Slides</a>{% endif %}
+      {% if talk.video %}{% if talk.href or talk.slides %} · {% endif %}<a href="{{ talk.video }}"{{ talk.video | externalLinkAttrs }}>Video</a>{% endif %}
+    </p>
+    {% endif %}
+    {{ pills(talk.projectIds, projects) }}
+  </li>
+  {% endfor %}
+</ul>

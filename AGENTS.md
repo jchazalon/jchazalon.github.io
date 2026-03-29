@@ -9,8 +9,8 @@
 Personal academic website for **Joseph Chazalon** (EPITA-LRE), hosted on
 **GitHub Pages** at <https://jchazalon.github.io>.
 
-The site showcases publications, research projects, teaching, news, blog
-posts, software, datasets, and models.
+The site showcases publications, talks, research projects, teaching, news,
+blog posts, software, datasets, and models.
 
 ## 2. Stack and Tooling
 
@@ -19,7 +19,7 @@ posts, software, datasets, and models.
 | **SSG** | [Eleventy 3](https://www.11ty.dev/) (ESM config) |
 | **Templates** | Nunjucks (`.njk`) for HTML and Markdown |
 | **Markdown** | `markdown-it` with `markdown-it-katex` (LaTeX math) |
-| **Bibliography** | Citation.js (`@citation-js/core` + `plugin-bibtex` + `plugin-csl`) |
+| **Bibliography** | JSON source (`src/_data/bibliography.json`) + custom converters (`bibliographySource.cjs`) |
 | **Syntax highlight** | `@11ty/eleventy-plugin-syntaxhighlight` |
 | **RSS** | `@11ty/eleventy-plugin-rss` |
 | **Hosting** | GitHub Pages via `.github/workflows/pages.yml` |
@@ -42,20 +42,21 @@ Always verify changes compile cleanly with `npm run build`.
 /                          repo root
 ├── AGENTS.md              this file
 ├── TODO.md                remaining tasks
-├── publications.bib       master BibTeX (passthrough-copied to _site/)
 ├── eleventy.config.mjs    Eleventy config (ESM)
 ├── package.json
+├── docs/                  maintenance docs (including bibliography guide)
 ├── .github/workflows/     GitHub Pages CI
 └── src/                   Eleventy input directory
     ├── _data/             global data (JSON, JS, CJS)
     │   ├── site.json          site metadata
     │   ├── projects.json      project cards (id, title, summary, ...)
     │   ├── news.json          activity/news items
-    │   ├── software.json      software resources
-    │   ├── datasets.json      dataset resources
-    │   ├── models.json        model resources
-    │   ├── publications.js    async data: parses publications.bib
-    │   ├── bibEntryExtras.cjs custom BibTeX field parser
+    │   ├── bibliography.json  single source for publications and talks
+    │   ├── resources.json     unified software/datasets/models resources
+    │   ├── publications.js    derives publications collection from bibliography
+    │   ├── talks.js           derives talks collection from bibliography
+    │   ├── publicationsBib.js generates BibTeX export content
+    │   ├── bibliographySource.cjs shared loaders/converters for bibliography
     │   └── projectEnrichment.cjs
     ├── _includes/partials/ reusable Nunjucks partials
     ├── _layouts/           base.njk, post.njk
@@ -63,7 +64,8 @@ Always verify changes compile cleanly with `npm run build`.
     ├── blog/posts/         Markdown blog posts (*.md + 11tydata.js)
     ├── projects/           project listing (index.njk + 11tydata.js)
     ├── publications/       publication listing
-    ├── contact/, imprint/, news/, teaching/, artifacts/
+    ├── talks/              talks listing
+    ├── contact/, imprint/, news/, teaching/, resources/
     ├── index.njk           home page
     └── feed.njk            RSS/Atom feed
 ```
@@ -71,42 +73,35 @@ Always verify changes compile cleanly with `npm run build`.
 Output is written to `_site/` (gitignored). A `.nojekyll` sentinel is
 auto-created by the `eleventy.after` hook.
 
-## 4. Publication Data Pipeline
+## 4. Bibliography Data Pipeline
 
 This is the most complex subsystem; understand it before touching
-publications.
+publications/talks.
 
 ### Flow
 
-1. **`publications.bib`** (repo root) — the single source of truth.
-2. **`src/_data/publications.js`** reads the file at build time via
-   Citation.js (`Cite.async`).
-3. **`src/_data/bibEntryExtras.cjs`** parses custom braced fields that
-   Citation.js ignores (see below). The two are merged by `publications.js`.
-4. Only entries whose CSL type is in `PUBLICATION_TYPES` are kept:
-   `article`, `article-journal`, `paper-conference`, `book`, `thesis`,
-   `chapter`, `report`, `manuscript`.
-5. Output is sorted **year descending** and exposed as `publications`
-   global data.
+1. **`src/_data/bibliography.json`** is the single source of truth.
+2. **`src/_data/bibliographySource.cjs`** loads/normalizes entries and
+   provides conversion helpers.
+3. **`src/_data/publications.js`** derives publication rows for
+   `/publications/`.
+4. **`src/_data/talks.js`** derives talk rows for `/talks/`.
+5. **`src/_data/publicationsBib.js`** builds BibTeX export content; rendered
+   by `src/publications.bib.11ty.js` at `/publications.bib`.
 
-### Custom BibTeX fields
+### JSON entry model
 
-These fields are parsed by `bibEntryExtras.cjs` using brace-matching
-(not by Citation.js):
+The source file supports publication and talk entries with shared fields.
 
-| Field | Format | Purpose |
-|-------|--------|---------|
-| `projects` | `{id}` or `{id1 and id2}` | Links pub to project cards |
-| `pdf` | `{url}` or `{url1, url2}` | Full-text PDF links |
-| `slides` | same | Slide deck links |
-| `poster` | same | Poster links |
-| `code` | same | Source code repo links |
-| `model` | same | Trained model links |
-| `thumb` / `image` | `{/assets/images/...}` | Thumbnail path |
-| `core` | `{A*}`, `{A}`, `{B}`, ... | CORE ranking |
-| `scimago` | `{Q1}`, `{Q2}`, ... | SCImago quartile |
-
-Separator for multi-value fields: comma or ` and `.
+| Field | Purpose |
+|-------|---------|
+| `category` (`publication`/`talk`) | Drives destination pages |
+| `title.text` / `title.html` | Plain title + optional rich rendering |
+| `authors[]` | Structured author names (`given`/`family` or `literal`) |
+| `projectIds[]` | Project cross-linking |
+| `links.*[]` | Multi-link slots (pdf/slides/poster/event/video) |
+| `ranking.core` / `ranking.scimago` | Venue ranking badges |
+| `bibtex.*` | Export type/key/overrides for generated `/publications.bib` |
 
 ### Nunjucks filters (eleventy.config.mjs)
 
@@ -125,10 +120,8 @@ hosting platform from URL hostname (HAL, arXiv, GitHub, etc.).
 | File | How project IDs are used |
 |------|--------------------------|
 | `src/_data/projects.json` | `"id": "soduco"` — defines the ID |
-| `publications.bib` | `projects = {soduco}` or `{soduco and mezanno}` |
-| `src/_data/software.json` | `"projectIds": ["soduco"]` |
-| `src/_data/datasets.json` | `"projectIds": [...]` |
-| `src/_data/models.json` | `"projectIds": [...]` |
+| `src/_data/bibliography.json` | `"projectIds": ["soduco", "mezanno"]` |
+| `src/_data/resources.json` | `"projectIds": ["soduco"]` and `"publicationIds": ["paper-id"]` |
 
 `src/projects/projects.11tydata.js` enriches each project page with its
 linked publications, software, datasets, and models.
@@ -138,8 +131,7 @@ linked publications, software, datasets, and models.
 - Static files live under `src/assets/` and are passthrough-copied to
   `_site/assets/`.
 - Reference assets with **web-root paths**: `/assets/images/my-pic.png`.
-- `publications.bib` is also passthrough-copied to `_site/publications.bib`
-  so visitors can download it.
+- `/publications.bib` is generated from JSON bibliography data at build time.
 
 ## 7. Data File Schemas (quick reference)
 
@@ -181,10 +173,17 @@ Array of `{ "date": "YYYY-MM-DD", "text": "...", "url": "..." }`.
 Sorted by `sortNews` filter (date descending). `recentNewsItems` filter
 shows only items from the last year (UTC calendar day cutoff).
 
-### Resource files (`software.json`, `datasets.json`, `models.json`)
+### `src/_data/bibliography.json`
 
-Each is an array of objects with at least:
-`{ "title", "url", "projectIds": [...] }`.
+Top-level object with `version` and `entries` array. Each entry contains
+common metadata plus category-specific fields. See `docs/publications.md`
+for full schema and examples.
+
+### `src/_data/resources.json`
+
+Top-level object with `version` and `entries` array. Each resource entry has
+at least:
+`{ "id", "type", "name", "url", "projectIds": [...], "publicationIds": [...] }`.
 
 ## 8. Templates and Layouts
 
@@ -201,7 +200,7 @@ Partials in `_includes/partials/`:
 ## 9. Conventions and Coding Style
 
 - **No TypeScript** — plain ES modules (`.mjs` config, `.js` data) and
-  CommonJS (`.cjs`) where Citation.js / Node interop requires it.
+  CommonJS (`.cjs`) where Node interop or shared utilities require it.
 - **Nunjucks** for all HTML templates; Markdown rendered through Nunjucks
   pipeline (`markdownTemplateEngine: "njk"`).
 - Template filters and globals are defined in `eleventy.config.mjs`.
@@ -219,14 +218,15 @@ to GitHub Pages on push to main. The `eleventy.after` hook writes
 
 ### Add a publication
 
-1. Add BibTeX entry to `publications.bib` (at the top for visibility).
-2. Include custom fields (`projects`, `pdf`, `code`, etc.) as needed.
-3. Run `npm run build` to verify parsing.
+1. Add/update an entry in `src/_data/bibliography.json` with
+   `category: "publication"`.
+2. Fill structured fields (`projectIds`, `links`, `ranking`, `bibtex`).
+3. Run `npm run build` to verify publication rendering and BibTeX export.
 
 ### Add a project
 
 1. Append object to `src/_data/projects.json` with a unique `id`.
-2. Use that `id` in `publications.bib` (`projects` field) and resource
+2. Use that `id` in `src/_data/bibliography.json` (`projectIds`) and resource
    JSON files (`projectIds`) to cross-link.
 
 ### Add a news item
@@ -234,26 +234,30 @@ to GitHub Pages on push to main. The `eleventy.after` hook writes
 Append to `src/_data/news.json` with `date` (YYYY-MM-DD), `text`, and
 optional `url`.
 
+### Add a talk
+
+Append to `src/_data/bibliography.json` with `category: "talk"` and
+optional `venue`, `summary`, `links.event`, `links.slides`,
+`links.video`, `projectIds`.
+
 ### Add software / dataset / model
 
-Append to the appropriate JSON file in `src/_data/`, including
-`projectIds` for cross-linking.
+Append to `src/_data/resources.json` with `type` (`software`/`dataset`/`model`),
+plus `projectIds` and optional `publicationIds` for cross-linking.
 
 ### Wire image assets
 
 1. Place the image in `src/assets/images/`.
-2. Reference it as `/assets/images/filename.ext` in the relevant JSON or
-   BibTeX `thumb`/`image` field.
+2. Reference it as `/assets/images/filename.ext` in the relevant JSON
+   `image` field.
 
 ## 12. Gotchas and Pitfalls
 
 - **`npm` not found?** Run `source ~/.nvm/nvm.sh` first.
-- **Unsupported BibTeX types are silently dropped** by `publications.js`.
-  If a new entry does not appear, check its type against `PUBLICATION_TYPES`.
-- **Custom BibTeX fields** (`projects`, `pdf`, ...) are NOT parsed by
-  Citation.js — they rely on the brace-matching logic in
-  `bibEntryExtras.cjs`. Syntax errors (unmatched braces) can silently lose
-  data.
+- **Invalid JSON syntax** in `bibliography.json` fails data loading.
+  Validate commas/braces before build.
+- **Missing `bibtex.key` or `bibtex.type`** still renders web pages, but
+  weakens BibTeX export quality.
 - **`recentBlogPosts` / `recentNewsItems`** use a rolling 1-year UTC
   calendar cutoff. Items older than that disappear from the home page
   automatically.

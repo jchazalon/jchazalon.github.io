@@ -6,7 +6,7 @@ description: Research projects with linked publications, software, datasets, and
 {% from "partials/project-detail-block.njk" import projectDetail %}
 
 <h1>Projects</h1>
-<p class="lede-small">Software, datasets, and models use <code>projectIds</code> in JSON; publications use <code>projects</code> in <code>publications.bib</code>. Optional: <code>image</code>, <code>startYear</code>, <code>endYear</code> (<code>null</code> or omitted = ongoing).</p>
+<p class="lede-small">Software, datasets, and models use <code>projectIds</code> in JSON; publications and talks use <code>projectIds</code> in <code>src/_data/bibliography.json</code>. Optional: <code>image</code>, <code>startYear</code>, <code>endYear</code> (<code>null</code> or omitted = ongoing).</p>
 
 {% if projectsOngoing.length and projectsPast.length %}
 <nav class="page-jump-nav" aria-label="Project sections">

@@ -6,7 +6,7 @@ description: Software, datasets, and models with links to projects.
 {% from "partials/project-pills.njk" import pills %}
 
 <h1>Resources</h1>
-<p class="lede-small">Software, datasets, and models we release or maintain. Each entry can include an optional <code>image</code> (path under <code>/assets/images/</code> or absolute URL). Use <code>projectIds</code> for cross-links.</p>
+<p class="lede-small">Software, datasets, and models we release or maintain. Canonical source: <code>src/_data/resources.json</code>. Each entry can include optional <code>authors</code>, <code>projectIds</code>, and <code>publicationIds</code> for automatic cross-linking.</p>
 
 <nav class="page-jump-nav" aria-label="Resource sections">
   <span class="page-jump-label">Jump to</span>
@@ -18,7 +18,7 @@ description: Software, datasets, and models with links to projects.
 <section class="artifact-section" id="software">
   <h2>Software</h2>
   <ul class="artifact-list">
-    {% for sw in software %}
+    {% for sw in resourceCatalog.software %}
     <li class="artifact-item" id="software-{{ sw.id }}">
       <div class="artifact-row">
         {% if sw.image %}
@@ -29,18 +29,29 @@ description: Software, datasets, and models with links to projects.
         <div class="artifact-body">
           <h3><a href="{{ sw.url }}"{{ sw.url | externalLinkAttrs }}>{{ sw.name }}</a></h3>
           <p>{{ sw.description }}</p>
+          {% if sw.authors.length %}<p class="small muted">Authors: {{ sw.authors | join(", ") }}</p>{% endif %}
+          {% if sw.linkedPublications.length %}
+          <p class="small muted">Related publications:
+            {% for pub in sw.linkedPublications %}
+            <a href="{{ '/publications/' | url }}#{{ pub.id }}">{{ pub.title }}</a>{% if not loop.last %} · {% endif %}
+            {% endfor %}
+          </p>
+          {% endif %}
           <div class="artifact-meta">{{ pills(sw.projectIds, projects) }}</div>
         </div>
       </div>
     </li>
     {% endfor %}
+    {% if not resourceCatalog.software.length %}
+    <li class="muted">No software resources listed.</li>
+    {% endif %}
   </ul>
 </section>
 
 <section class="artifact-section" id="datasets">
   <h2>Datasets</h2>
   <ul class="artifact-list">
-    {% for ds in datasets %}
+    {% for ds in resourceCatalog.datasets %}
     <li class="artifact-item" id="dataset-{{ ds.id }}">
       <div class="artifact-row">
         {% if ds.image %}
@@ -51,18 +62,29 @@ description: Software, datasets, and models with links to projects.
         <div class="artifact-body">
           <h3><a href="{{ ds.url }}"{{ ds.url | externalLinkAttrs }}>{{ ds.name }}</a></h3>
           <p>{{ ds.description }}</p>
+          {% if ds.authors.length %}<p class="small muted">Authors: {{ ds.authors | join(", ") }}</p>{% endif %}
+          {% if ds.linkedPublications.length %}
+          <p class="small muted">Related publications:
+            {% for pub in ds.linkedPublications %}
+            <a href="{{ '/publications/' | url }}#{{ pub.id }}">{{ pub.title }}</a>{% if not loop.last %} · {% endif %}
+            {% endfor %}
+          </p>
+          {% endif %}
           <div class="artifact-meta">{{ pills(ds.projectIds, projects) }}</div>
         </div>
       </div>
     </li>
     {% endfor %}
+    {% if not resourceCatalog.datasets.length %}
+    <li class="muted">No datasets listed.</li>
+    {% endif %}
   </ul>
 </section>
 
 <section class="artifact-section" id="models">
   <h2>Models</h2>
   <ul class="artifact-list">
-    {% for m in models %}
+    {% for m in resourceCatalog.models %}
     <li class="artifact-item" id="model-{{ m.id }}">
       <div class="artifact-row">
         {% if m.image %}
@@ -73,10 +95,21 @@ description: Software, datasets, and models with links to projects.
         <div class="artifact-body">
           <h3><a href="{{ m.url }}"{{ m.url | externalLinkAttrs }}>{{ m.name }}</a></h3>
           <p>{{ m.description }}</p>
+          {% if m.authors.length %}<p class="small muted">Authors: {{ m.authors | join(", ") }}</p>{% endif %}
+          {% if m.linkedPublications.length %}
+          <p class="small muted">Related publications:
+            {% for pub in m.linkedPublications %}
+            <a href="{{ '/publications/' | url }}#{{ pub.id }}">{{ pub.title }}</a>{% if not loop.last %} · {% endif %}
+            {% endfor %}
+          </p>
+          {% endif %}
           <div class="artifact-meta">{{ pills(m.projectIds, projects) }}</div>
         </div>
       </div>
     </li>
     {% endfor %}
+    {% if not resourceCatalog.models.length %}
+    <li class="muted">No models listed.</li>
+    {% endif %}
   </ul>
 </section>

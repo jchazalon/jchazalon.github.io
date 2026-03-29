@@ -1,5 +1,8 @@
 function enrichProjects(data) {
-  const { projects, publications, software, datasets, models } = data;
+  const { projects, publications, resourceCatalog } = data;
+  const software = resourceCatalog?.software || [];
+  const datasets = resourceCatalog?.datasets || [];
+  const models = resourceCatalog?.models || [];
   if (!projects) return [];
   return projects.map((project) => ({
     ...project,

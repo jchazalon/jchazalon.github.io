@@ -34,10 +34,11 @@ To use a single branch name, edit the `on.push.branches` entry in that workflow.
 
 ## Content and cross-links
 
-- **Publications:** [`publications.bib`](publications.bib) (see [Publication (BibTeX)](#publication-bibtex)).
+- **Bibliography (publications + talks):** [`src/_data/bibliography.json`](src/_data/bibliography.json) — full guide in [`docs/publications.md`](docs/publications.md).
 - **Projects:** [`src/_data/projects.json`](src/_data/projects.json) — [Project](#project).
-- **Resources** (navbar label for software, datasets, models): [`software.json`](src/_data/software.json), [`datasets.json`](src/_data/datasets.json), [`models.json`](src/_data/models.json) — [Artifact](#artifact-software-dataset-model); page URL remains [`/artifacts/`](src/artifacts/index.njk).
+- **Resources** (navbar label for software, datasets, models): [`src/_data/resources.json`](src/_data/resources.json) — [Artifact](#artifact-software-dataset-model), full guide in [`docs/resources.md`](docs/resources.md); page URL is [`/resources/`](src/resources/index.njk).
 - **News:** [`src/_data/news.json`](src/_data/news.json) — [News item](#news-item).
+- **Talks page:** [`src/talks/index.njk`](src/talks/index.njk) (rendered from bibliography entries with `category: "talk"`).
 - **Blog:** Markdown posts under [`src/blog/posts/`](src/blog/posts/) — [Blog posts](#blog-posts) (math, code highlighting, optional widgets, RSS, home sidebar).
 - **Site metadata:** [`src/_data/site.json`](src/_data/site.json) — [Site](#site).
 - **Contact & opportunities:** [`src/contact/index.njk`](src/contact/index.njk) — contact text, PhD/internship/collaboration blurb, booking link (see `scheduleUrl` in `site.json`).
@@ -46,59 +47,37 @@ To use a single branch name, edit the `on.push.branches` entry in that workflow.
 
 Blog posts are **not** in `news.json`: they are separate files so you can use long form, code, math, and embeds. News stays best for short, dated announcements.
 
-Project pages aggregate linked publications and artifacts; publication and artifact pages show **Related projects** pills when `projects` / `projectIds` are set.
+Project pages aggregate linked publications and resources; publication and resources pages show **Related projects** pills when `projects` / `projectIds` are set.
 
 ### Where to put resources (images, data, static files)
 
-The build copies **`src/assets/`** wholesale into **`_site/assets/`** (see `addPassthroughCopy` in [`eleventy.config.mjs`](eleventy.config.mjs)). **`publications.bib`** at the repository root is also copied to the site root. Everything else under `src/` is treated as templates or data, not as arbitrary binary files—so **do not** drop images next to a template expecting them to publish unless you add another passthrough rule.
+The build copies **`src/assets/`** wholesale into **`_site/assets/`** (see `addPassthroughCopy` in [`eleventy.config.mjs`](eleventy.config.mjs)). The downloadable **`/publications.bib`** file is generated at build-time from bibliography JSON data. Everything else under `src/` is treated as templates or data, not as arbitrary binary files—so **do not** drop images next to a template expecting them to publish unless you add another passthrough rule.
 
 | What you are adding | Where the *content* lives | Where images / downloads / extra static files go |
 | ------------------- | ------------------------- | -------------------------------------------------- |
 | **Project** | New object in [`src/_data/projects.json`](src/_data/projects.json) | Optional `image`: path starting with **`/assets/...`** (file under `src/assets/`, e.g. `src/assets/images/projects/<id>.png`) or a full `https://...` URL. |
-| **Software, dataset, or model** | New object in [`src/_data/software.json`](src/_data/software.json), [`datasets.json`](src/_data/datasets.json), or [`models.json`](src/_data/models.json) | Same as project `image`: **`/assets/...`** or external URL. The primary **`url`** usually points off-site (repo, Zenodo, Hugging Face, etc.); this site does not host dataset or model binaries. |
-| **Publication teaser** | [`publications.bib`](publications.bib) — `thumb` / `image` in [site-specific fields](#publication-bibtex) | Site-hosted teasers: **`/assets/...`** (e.g. `src/assets/images/pubs/`). PDFs/slides/posters are normally external URLs in `pdf`, `slides`, etc. |
+| **Software, dataset, or model** | New object in [`src/_data/resources.json`](src/_data/resources.json) with `type: "software" | "dataset" | "model"` | Same as project `image`: **`/assets/...`** or external URL. The primary **`url`** usually points off-site (repo, Zenodo, Hugging Face, etc.); this site does not host dataset or model binaries. |
+| **Publication or talk** | [`src/_data/bibliography.json`](src/_data/bibliography.json) | Site-hosted teasers: **`/assets/...`** (e.g. `src/assets/images/pubs/`). External files should be listed in bibliography link arrays (`pdf`, `slides`, `video`, etc.). |
 | **Blog post** | New `.md` under [`src/blog/posts/`](src/blog/posts/) | Put figures and downloads under **`src/assets/`** (e.g. `src/assets/images/blog/`) and reference them in Markdown with **`/assets/...`** (or absolute `https://...`). |
 | **News item** | [`src/_data/news.json`](src/_data/news.json) — text fields only | No dedicated asset fields; embed off-site links in `body` / `href`, or add a passthrough + convention if you need hosted files. |
 | **Another site page** | New `index.njk` / `index.md` under `src/` (e.g. [`src/teaching/index.md`](src/teaching/index.md)) | Same as blog: static files under **`src/assets/`**, linked as **`/assets/...`**. |
 
-**Structured “data” for the generator** (lists of projects, news, artifacts, `site.json`) always lives in **`src/_data/`** as JSON or JS, or in **`publications.bib`** for bibliography—not mixed into `src/assets/`. Use **`src/assets/`** for anything that should be served as a file (images, CSS overrides you add, JS, optional PDFs you choose to host on Pages).
+**Structured “data” for the generator** (lists of projects, news, artifacts, site metadata, bibliography) always lives in **`src/_data/`** as JSON/JS—not mixed into `src/assets/`. Use **`src/assets/`** for anything that should be served as a file (images, CSS overrides you add, JS, optional PDFs you choose to host on Pages).
 
-**URL rule:** For anything stored under `src/assets/`, use a **root-relative** path in content: **`/assets/<path-under-src/assets>`** (leading slash, no `src/`). That matches how [`projects.json`](src/_data/projects.json) and the BibTeX extras already reference images.
+**URL rule:** For anything stored under `src/assets/`, use a **root-relative** path in content: **`/assets/<path-under-src/assets>`** (leading slash, no `src/`). That matches how [`projects.json`](src/_data/projects.json) and bibliography entries reference images.
 
 ## Content object reference
 
 Field names below are the ones the templates and data pipeline expect. Optional fields may be omitted or set to empty values as noted.
 
-### Publication (BibTeX)
+### Bibliography (publications + talks)
 
-Source file: [`publications.bib`](publications.bib). Entries are parsed with [Citation.js](https://citation.js.org/) for bibliographic data and with [`src/_data/bibEntryExtras.cjs`](src/_data/bibEntryExtras.cjs) for site-only fields.
+Source file: [`src/_data/bibliography.json`](src/_data/bibliography.json). This single source powers:
+- `publications` data (`src/_data/publications.js`)
+- `talks` data (`src/_data/talks.js`)
+- downloadable BibTeX (`/publications.bib`, generated by `src/publications.bib.11ty.js`)
 
-**Included on the Publications page** when the Citation.js type is one of: `article`, `article-journal`, `paper-conference`, `book`, `thesis`, `chapter`, `report`, `manuscript`. Other entry types (for example `@software` mixed into the same file) are skipped for that list.
-
-**Standard BibTeX / CSL fields** (examples; use normal BibTeX for your entry type):
-
-- **`title`**, **`author`**, **`year`** (or `date`): required for a sensible listing.
-- **`doi`**: optional; shown as a DOI link.
-- **`url`**: optional; shown as “Publisher page”.
-- Venue depends on type: e.g. **`booktitle`** + **`pages`** for proceedings, **`journal`**, **`volume`**, **`number`**, **`pages`** for articles, **`school`** for theses (rendered via Citation.js).
-
-**Site-specific braced fields** (parsed only from the raw `.bib` text; multiple values separated by **comma** or **`and`**):
-
-- **`projects`**: string ids matching [`projects.json`](src/_data/projects.json) `id` values. Example: `projects = {doc-ie-historical and eval-benchmarks}`.
-- **`pdf`**: URLs to paper PDFs (HAL, arXiv, publisher OA, etc.).
-- **`slides`**: URLs to slides.
-- **`poster`**: URLs to posters.
-- **`code`**: URLs to source repositories.
-- **`model`**: URLs to model artifacts (e.g. Hugging Face, Zenodo).
-- **`thumb`** or **`image`**: optional teaser image (single path or URL). Site-relative paths should start with `/assets/...` so they resolve after build.
-- **`core`**: optional CORE conference rank (free text, e.g. `A*`, `A`, `B`); shown as a badge.
-- **`scimago`**: optional Scimago / SJR-style journal label (e.g. `Q1`); shown as an **SJR** badge.
-
-At build time each publication row also gets:
-
-- **`projectIds`**: string array from `projects`.
-- **`bibLinks`**: object with keys `pdf`, `slides`, `poster`, `code`, `model`, each a string array of URLs.
-- **`thumb`**, **`core`**, **`scimago`**: copied from the extras parser for templates.
+The full schema and concrete examples are documented in [`docs/publications.md`](docs/publications.md).
 
 ### Project
 
@@ -121,16 +100,19 @@ If none of `role`, `fundingSources`, or `budget` is set, no funding block is ren
 
 ### Artifact (software, dataset, model)
 
-Source files: [`src/_data/software.json`](src/_data/software.json), [`src/_data/datasets.json`](src/_data/datasets.json), [`src/_data/models.json`](src/_data/models.json). Each file is a **JSON array** of objects with the **same** shape.
+Source file: [`src/_data/resources.json`](src/_data/resources.json). The file is a **versioned JSON document** with top-level `version` and `entries` array.
 
 | Field | Type | Required | Description |
 | ----- | ---- | -------- | ----------- |
-| `id` | string | yes | Stable slug; used in HTML ids on `/artifacts/` (`#software-id`, `#dataset-id`, `#model-id`). |
+| `id` | string | yes | Stable slug; used in HTML ids on `/resources/` (`#software-id`, `#dataset-id`, `#model-id`). |
+| `type` | string | yes | One of `software`, `dataset`, `model`; drives section placement. |
 | `name` | string | yes | Display name (heading + link text). |
 | `description` | string | yes | Short paragraph. |
 | `url` | string | yes | Primary link (repo, dataset page, model card, etc.). |
 | `image` | string or `null` | no | Optional thumbnail (same rules as project `image`). |
-| `projectIds` | string[] | no | Ids of projects this artifact belongs to; drives **Related projects** on the artifact page and lists on project pages. |
+| `projectIds` | string[] | no | Ids of projects this artifact belongs to; drives **Related projects** on the resources page and lists on project pages. |
+| `publicationIds` | string[] | no | Publication ids from `bibliography.json`; used for automatic publication↔resource links. |
+| `authors` | string[] or structured name[] | no | Optional artifact-specific authors (can differ from publication authors). |
 
 ### News item
 
@@ -143,6 +125,7 @@ Source file: [`src/_data/news.json`](src/_data/news.json). The file is a **JSON 
 | `summary` | string | no | One-line blurb for the **home** sidebar; if omitted, the home page falls back to `title`. |
 | `body` | string | no | Longer text on `/news/`; may be omitted. |
 | `href` | string or null | no | Optional “More” link; use `null` when absent. |
+
 
 ### Blog posts
 

@@ -1,52 +1,52 @@
-const fs = require("fs");
-const path = require("path");
-const { Cite } = require("@citation-js/core");
-require("@citation-js/plugin-bibtex");
-const { parsePublicationExtrasByCitationKey } = require("./bibEntryExtras.cjs");
+const {
+  loadBibliographyDocument,
+  datePartsFromIsoLike,
+  mapAuthorsForPublication,
+  linkUrls,
+  bibtexEntryString,
+} = require("./bibliographySource.cjs");
+const {
+  loadResources,
+  splitResourcesByType,
+  mapResourcesByPublicationId,
+} = require("./resourcesSource.cjs");
 
-const PUBLICATION_TYPES = new Set([
-  "article",
-  "article-journal",
-  "paper-conference",
-  "book",
-  "thesis",
-  "chapter",
-  "report",
-  "manuscript",
-]);
-
-module.exports = async function () {
-  const root = path.join(__dirname, "..", "..");
-  const bibPath = path.join(root, "publications.bib");
-  const bib = fs.readFileSync(bibPath, "utf8");
-  const cite = await Cite.async(bib);
-  const extrasMap = parsePublicationExtrasByCitationKey(bib);
-
-  const entries = cite.data
-    .filter((item) => PUBLICATION_TYPES.has(item.type))
+module.exports = function () {
+  const doc = loadBibliographyDocument();
+  const resources = loadResources();
+  const resourcesByPubId = mapResourcesByPublicationId(resources);
+  const entries = (doc.entries || [])
+    .filter((item) => item && item.category === "publication")
     .map((item) => {
-      const key = item["citation-key"] || item.id;
-      const extra = extrasMap[key] || extrasMap[item.id] || {
-        projectIds: [],
-        bibLinks: { pdf: [], slides: [], poster: [], code: [], model: [] },
-        thumb: null,
-        core: null,
-        scimago: null,
-      };
-      const { _graph, ...rest } = item;
+      const dateParts = datePartsFromIsoLike(item.date);
+      const linked = resourcesByPubId[item.id] || [];
+      const grouped = splitResourcesByType(linked);
       return {
-        ...rest,
-        projectIds: extra.projectIds || [],
-        bibLinks: extra.bibLinks || {
-          pdf: [],
-          slides: [],
-          poster: [],
-          code: [],
-          model: [],
+        id: item.id,
+        "citation-key": item.id,
+        type: item.subtype || "manuscript",
+        title: item?.title?.text || "",
+        titleHtml: item?.title?.html || null,
+        author: mapAuthorsForPublication(item.authors),
+        issued: dateParts ? { "date-parts": dateParts } : null,
+        URL: item?.publication?.url || linkUrls(item?.links?.event)[0] || null,
+        DOI: item?.publication?.doi || null,
+        "container-title": item?.venue?.name || "",
+        volume: item?.publication?.volume || null,
+        issue: item?.publication?.issue || null,
+        page: item?.publication?.pages || null,
+        publisher: item?.publication?.publisher || null,
+        projectIds: item.projectIds || [],
+        bibLinks: {
+          pdf: linkUrls(item?.links?.pdf),
+          slides: linkUrls(item?.links?.slides),
+          poster: linkUrls(item?.links?.poster),
         },
-        thumb: extra.thumb || null,
-        core: extra.core || null,
-        scimago: extra.scimago || null,
+        linkedResources: grouped,
+        thumb: item.image || null,
+        core: item?.ranking?.core || null,
+        scimago: item?.ranking?.scimago || null,
+        bibtex: bibtexEntryString(item),
       };
     });
 
@@ -55,6 +55,5 @@ module.exports = async function () {
     const yb = Number(b.issued?.["date-parts"]?.[0]?.[0]) || 0;
     return yb - ya;
   });
-
   return entries;
 };

@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "eleventy",
+    "build": "node scripts/validate-data.mjs && eleventy",
     "start": "eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "@citation-js/core": "^0.7.14",
-    "@citation-js/plugin-bibtex": "^0.7.14",
-    "@citation-js/plugin-csl": "^0.7.14",
     "katex": "^0.16.40",
     "markdown-it-katex": "^2.0.3"
   }

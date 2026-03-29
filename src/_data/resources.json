@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "entries": [
+  {
+    "id": "ftd-dataset",
+    "type": "dataset",
+    "name": "French Trade Directories (FTD)",
+    "description": "Open dataset of 19th-century French trade directories used for information extraction and historical text processing experiments.",
+    "url": "https://doi.org/10.5281/zenodo.6394464",
+    "image": null,
+    "projectIds": [
+      "soduco",
+      "ner-historical-docs"
+    ],
+    "publicationIds": [],
+    "authors": []
+  },
+  {
+    "id": "ftd-nested-ner-2023",
+    "type": "dataset",
+    "name": "French Trade Directories dataset for nested NER",
+    "description": "Dataset of 19th-century French trade directories designed for nested named entity recognition benchmarks.",
+    "url": "https://doi.org/10.5281/zenodo.8167628",
+    "image": null,
+    "projectIds": [
+      "soduco",
+      "ner-historical-docs"
+    ],
+    "publicationIds": [
+      "tual.23.icdar-ner"
+    ],
+    "authors": [
+      "Tual, S.",
+      "Abadie, N.",
+      "Chazalon, Joseph",
+      "Dumenieu, B.",
+      "Carlinet, E."
+    ]
+  },
+  {
+    "id": "smartdoc15-ch1",
+    "type": "dataset",
+    "name": "ICDAR 2015 SmartDoc challenge 1 dataset",
+    "description": "Dataset and benchmark material for smartphone document capture and OCR challenge task 1.",
+    "url": "https://zenodo.org/record/1230218",
+    "image": null,
+    "projectIds": [
+      "mobile-doc-capture"
+    ],
+    "publicationIds": [
+      "burie.15.icdar-smartdoc"
+    ],
+    "authors": [
+      "Burie, Jean-Christophe",
+      "Chazalon, Joseph",
+      "Coustaty, Mickael",
+      "Eskenazi, Sebastien",
+      "Luqman, Muhammad Muzzamil",
+      "Mehri, Maroua",
+      "Nayef, Nibal",
+      "Ogier, Jean-Marc",
+      "Prum, Sophea",
+      "Rusinol, Marcal"
+    ]
+  },
+  {
+    "id": "smartdoc15-ch2",
+    "type": "dataset",
+    "name": "ICDAR 2015 SmartDoc challenge 2 dataset",
+    "description": "Dataset and benchmark material for smartphone document capture and OCR challenge task 2.",
+    "url": "https://zenodo.org/record/2572929",
+    "image": null,
+    "projectIds": [
+      "mobile-doc-capture"
+    ],
+    "publicationIds": [
+      "burie.15.icdar-smartdoc"
+    ],
+    "authors": [
+      "Burie, Jean-Christophe",
+      "Chazalon, Joseph",
+      "Coustaty, Mickael",
+      "Eskenazi, Sebastien",
+      "Luqman, Muhammad Muzzamil",
+      "Mehri, Maroua",
+      "Nayef, Nibal",
+      "Ogier, Jean-Marc",
+      "Prum, Sophea",
+      "Rusinol, Marcal"
+    ]
+  },
+  {
+    "id": "icdar2021-mapseg-dataset",
+    "type": "dataset",
+    "name": "ICDAR 2021 Competition on Historical Map Segmentation dataset",
+    "description": "Competition dataset for historical map segmentation tasks (building blocks, map content segmentation, and georeferencing intersections).",
+    "url": "https://zenodo.org/record/4817662",
+    "image": null,
+    "projectIds": [
+      "soduco",
+      "maptext-competitions"
+    ],
+    "publicationIds": [
+      "chazalon.21.icdar.2"
+    ],
+    "authors": [
+      "Chazalon, Joseph",
+      "Carlinet, Edwin",
+      "Chen, Yizi",
+      "Perret, Julien",
+      "Dumenieu, Bertrand",
+      "Mallet, Clement",
+      "Geraud, Thierry",
+      "Nguyen, Vincent",
+      "Nguyen, Nam",
+      "Baloun, Josef",
+      "Lenc, Ladislav",
+      "Kral, Pavel"
+    ]
+  },
+  {
+    "id": "maptext-zenodo-community",
+    "type": "dataset",
+    "name": "ICDAR MapText datasets and artifacts (Zenodo community)",
+    "description": "Shared datasets, evaluation scripts, and challenge artifacts for historical map text detection, recognition, and linking (MapText 2024-2025).",
+    "url": "https://zenodo.org/communities/icdar-maptext/",
+    "image": null,
+    "projectIds": [
+      "maptext-competitions",
+      "soduco"
+    ],
+    "publicationIds": [
+      "li.24.icdar-maptext",
+      "lin.25.icdar-maptext",
+      "pouliquen.25.icdar"
+    ],
+    "authors": [
+      "Li, Zekun",
+      "Lin, Yijun",
+      "Chiang, Yao-Yi",
+      "Weinman, Jerod",
+      "Tual, Solenn",
+      "Chazalon, Joseph",
+      "Perret, Julien",
+      "Dumenieu, Bertrand",
+      "Abadie, Nathalie",
+      "others",
+      "Pouliquen, Glen",
+      "Chiron, Guillaume",
+      "Geraud, Thierry",
+      "Awal, Ahmad Montaser"
+    ]
+  },
+  {
+    "id": "soduco-annuaires-1798-1914",
+    "type": "dataset",
+    "name": "Paris historical directories, 1798-1914 (structured and geolocated)",
+    "description": "Large-scale extraction and geolocation dataset from digitized Paris trade directories, released with the SoDUCo team.",
+    "url": "https://doi.org/10.34847/nkl.98eem49t",
+    "image": null,
+    "projectIds": [
+      "soduco"
+    ],
+    "publicationIds": [],
+    "authors": []
+  },
+  {
+    "id": "smartdoc-qa",
+    "type": "dataset",
+    "name": "SmartDoc-QA",
+    "description": "Dataset for quality assessment of smartphone-captured document images, including single and multiple distortions.",
+    "url": "https://zenodo.org/record/5293201",
+    "image": null,
+    "projectIds": [
+      "mobile-doc-capture"
+    ],
+    "publicationIds": [
+      "nayef.15.icdar-smartdocqa"
+    ],
+    "authors": [
+      "Nayef, Nibal",
+      "Luqman, Muhammad Muzzamil",
+      "Prum, Sophea",
+      "Eskenazi, Sebastien",
+      "Chazalon, Joseph",
+      "Ogier, Jean-Marc"
+    ]
+  },
+  {
+    "id": "text-superres-2013",
+    "type": "dataset",
+    "name": "Text single-image super-resolution dataset (2013)",
+    "description": "University of La Rochelle dataset for single text image super-resolution experiments.",
+    "url": "http://goo.gl/jM8ySG",
+    "image": null,
+    "projectIds": [
+      "mobile-doc-capture"
+    ],
+    "publicationIds": [
+      "nayef.14.das-superres"
+    ],
+    "authors": [
+      "Nayef, Nibal",
+      "Chazalon, Joseph",
+      "Gomez-Kramer, Petra",
+      "Ogier, Jean-Marc"
+    ]
+  },
+  {
+    "id": "software-chazalon-21-icdar-2-4",
+    "type": "software",
+    "name": "Code for ICDAR 2021 Competition on Historical Map Segmentation",
+    "description": "Software artifact linked from publication \"ICDAR 2021 Competition on Historical Map Segmentation\".",
+    "url": "https://icdar21-mapseg.github.io",
+    "image": null,
+    "projectIds": [
+      "soduco",
+      "maptext-competitions"
+    ],
+    "publicationIds": [
+      "chazalon.21.icdar.2"
+    ],
+    "authors": [
+      "Chazalon, Joseph",
+      "Carlinet, Edwin",
+      "Chen, Yizi",
+      "Perret, Julien",
+      "Dumenieu, Bertrand",
+      "Mallet, Clement",
+      "Geraud, Thierry",
+      "Nguyen, Vincent",
+      "Nguyen, Nam",
+      "Baloun, Josef",
+      "Lenc, Ladislav",
+      "Kral, Pavel"
+    ]
+  },
+  {
+    "id": "software-li-24-icdar-maptext-3",
+    "type": "software",
+    "name": "Code for ICDAR 2024 Competition on Historical Map Text Detection, Recognition, and Linking",
+    "description": "Software artifact linked from publication \"ICDAR 2024 Competition on Historical Map Text Detection, Recognition, and Linking\".",
+    "url": "https://rrc.cvc.uab.es/?ch=28",
+    "image": null,
+    "projectIds": [
+      "maptext-competitions",
+      "soduco"
+    ],
+    "publicationIds": [
+      "li.24.icdar-maptext"
+    ],
+    "authors": [
+      "Li, Zekun",
+      "Lin, Yijun",
+      "Chiang, Yao-Yi",
+      "Weinman, Jerod",
+      "Tual, Solenn",
+      "Chazalon, Joseph",
+      "Perret, Julien",
+      "Dumenieu, Bertrand",
+      "Abadie, Nathalie"
+    ]
+  },
+  {
+    "id": "software-lin-25-icdar-maptext-1",
+    "type": "software",
+    "name": "Code for ICDAR 2025 Competition on Historical Map Text Detection, Recognition, and Linking",
+    "description": "Software artifact linked from publication \"ICDAR 2025 Competition on Historical Map Text Detection, Recognition, and Linking\".",
+    "url": "https://rrc.cvc.uab.es/?ch=32",
+    "image": null,
+    "projectIds": [
+      "maptext-competitions",
+      "soduco"
+    ],
+    "publicationIds": [
+      "lin.25.icdar-maptext"
+    ],
+    "authors": [
+      "Lin, Yijun",
+      "Tual, Solenn",
+      "Li, Zekun",
+      "others"
+    ]
+  },
+  {
+    "id": "software-burie-15-icdar-smartdoc-5",
+    "type": "software",
+    "name": "Code for ICDAR2015 competition on smartphone document capture and OCR (SmartDoc)",
+    "description": "Software artifact linked from publication \"ICDAR2015 competition on smartphone document capture and OCR (SmartDoc)\".",
+    "url": "http://smartdoc.univ-lr.fr",
+    "image": null,
+    "projectIds": [
+      "mobile-doc-capture"
+    ],
+    "publicationIds": [
+      "burie.15.icdar-smartdoc"
+    ],
+    "authors": [
+      "Burie, Jean-Christophe",
+      "Chazalon, Joseph",
+      "Coustaty, Mickael",
+      "Eskenazi, Sebastien",
+      "Luqman, Muhammad Muzzamil",
+      "Mehri, Maroua",
+      "Nayef, Nibal",
+      "Ogier, Jean-Marc",
+      "Prum, Sophea",
+      "Rusinol, Marcal"
+    ]
+  },
+  {
+    "id": "software-bernard-24-ekaw-2",
+    "type": "software",
+    "name": "Code for PeGazUs: A Knowledge Graph Based Approach to Build Urban Perpetual Gazetteers",
+    "description": "Software artifact linked from publication \"PeGazUs: A Knowledge Graph Based Approach to Build Urban Perpetual Gazetteers\".",
+    "url": "https://github.com/umrlastig/pegazus-ontology",
+    "image": null,
+    "projectIds": [
+      "soduco",
+      "mezanno"
+    ],
+    "publicationIds": [
+      "bernard.24.ekaw"
+    ],
+    "authors": [
+      "Bernard, Charly",
+      "Tual, Solenn",
+      "Abadie, Nathalie",
+      "Dumenieu, Bertrand",
+      "Chazalon, Joseph",
+      "Perret, Julien"
+    ]
+  },
+  {
+    "id": "corpusense",
+    "type": "software",
+    "name": "Corpusense",
+    "description": "Open-source tool from the MEZANNO ecosystem to chain document analysis services and start producing structured data from public IIIF sources quickly.",
+    "url": "https://mezanno.xyz",
+    "image": null,
+    "projectIds": [
+      "mezanno"
+    ],
+    "publicationIds": [],
+    "authors": []
+  },
+  {
+    "id": "soduco-vectorization-code",
+    "type": "software",
+    "name": "ICDAR 2021 historical map vectorization code",
+    "description": "Code and supplementary material for historical map vectorization with deep edge filtering and mathematical morphology.",
+    "url": "https://github.com/soduco/ICDAR-2021-Vectorization",
+    "image": null,
+    "projectIds": [
+      "soduco"
+    ],
+    "publicationIds": [
+      "chen.21.icdar"
+    ],
+    "authors": [
+      "Chen, Yizi",
+      "Carlinet, Edwin",
+      "Chazalon, Joseph",
+      "Dumenieu, Bertrand",
+      "Perret, Julien"
+    ]
+  },
+  {
+    "id": "ner-historical-group",
+    "type": "software",
+    "name": "NER for historical documents resources",
+    "description": "Shared repositories and resources for named entity recognition on noisy OCR and historical structured documents.",
+    "url": "https://github.com/ner-for-historical-docs",
+    "image": null,
+    "projectIds": [
+      "ner-historical-docs",
+      "soduco"
+    ],
+    "publicationIds": [],
+    "authors": []
+  },
+  {
+    "id": "smartdoc2017-framework",
+    "type": "software",
+    "name": "SmartDoc 2017 evaluation framework",
+    "description": "Reference framework and tooling for mobile video document capture benchmarking (stitching and reconstruction-oriented evaluation).",
+    "url": "https://github.com/smartdoc2017-competition",
+    "image": null,
+    "projectIds": [
+      "mobile-doc-capture"
+    ],
+    "publicationIds": [
+      "chazalon.17.icdar-ost"
+    ],
+    "authors": [
+      "Chazalon, Joseph",
+      "Gomez-Kramer, P.",
+      "Burie, J.-C.",
+      "Coustaty, M.",
+      "Eskenazi, S.",
+      "Luqman, M.",
+      "Nayef, N.",
+      "Rusinol, M.",
+      "Sidere, N.",
+      "Ogier, J.-M."
+    ]
+  }
+  ]
+}
