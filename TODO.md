@@ -33,6 +33,8 @@
 
 ## Agent-Doable Tasks (no private data needed)
 
+
+1. Add start and end date for projects on home page
 1. **Wire assets once provided**
    - Update bibliography/resource fields (`image`) and verify rendering.
 2. **Remove documentation fragments from templates**
