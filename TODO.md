@@ -35,6 +35,7 @@
 
 
 1. Add start and end date for projects on home page
+1. Update subtitle below "Joseph Chazalon" on top of pages. Simplify description, maybe format on two lines: Research fields on first line, "Assistant Professor at EPITA Paris, France" on second.
 1. **Wire assets once provided**
    - Update bibliography/resource fields (`image`) and verify rendering.
 2. **Remove documentation fragments from templates**
